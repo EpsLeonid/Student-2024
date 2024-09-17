@@ -9,20 +9,20 @@ function s = trapezoidal_filter(t_start, v, k, l, M)
     % Вычисления
     for n = 1:N
         % Вычисление v_k,l(n)
-        if n - k + t_start > 0
-            v_k = v(n - k + t_start);
+         if n - k > 0
+            v_k = v(n - k);
         else
             v_k = 0;
         end
 
-        if n - l + t_start > 0
-            v_l = v(n - l + t_start);
+        if n - l  > 0
+            v_l = v(n - l);
         else
             v_l = 0;
         end
 
-        if n - k - l + t_start > 0
-            v_kl = v(n - k - l + t_start);
+        if n - k - l > 0
+            v_kl = v(n - k - l );
         else
             v_kl = 0;
         end
@@ -31,16 +31,17 @@ function s = trapezoidal_filter(t_start, v, k, l, M)
         d(n) = v(n) - v_k - v_l + v_kl;
 
         % Вычисление p(n)
-        if n + t_start > 0
+        if n > 1
             p(n) = p(n - 1) + d(n);
         end
 
         % Вычисление r(n)
         r(n) = p(n) + M * d(n);
 
-        % Вычисление выходного сигнала s(n)
-        if n + t_start > 0
+        if n > 1
             s(n) = s(n - 1) + r(n);
+        else
+            s(n)=r(n);
         end
     end
 end
