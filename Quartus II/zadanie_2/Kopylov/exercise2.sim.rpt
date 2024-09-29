@@ -1,0 +1,402 @@
+Simulator report for exercise2
+Sun Sep 29 17:44:34 2024
+Quartus II Version 9.1 Build 222 10/21/2009 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 180 nodes    ;
+; Simulation Coverage         ;      87.67 % ;
+; Total Number of Transitions ; 16007        ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
+; Device                      ; EP2S15F484C3 ;
++-----------------------------+--------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                 ;
++--------------------------------------------------------------------------------------------+-----------------------+---------------+
+; Option                                                                                     ; Setting               ; Default Value ;
++--------------------------------------------------------------------------------------------+-----------------------+---------------+
+; Simulation mode                                                                            ; Timing                ; Timing        ;
+; Start time                                                                                 ; 0 ns                  ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF                  ;               ;
+; Vector input source                                                                        ; register_paramexe.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                    ; On            ;
+; Check outputs                                                                              ; Off                   ; Off           ;
+; Report simulation coverage                                                                 ; On                    ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                    ; On            ;
+; Display missing 1-value coverage report                                                    ; On                    ; On            ;
+; Display missing 0-value coverage report                                                    ; On                    ; On            ;
+; Detect setup and hold time violations                                                      ; Off                   ; Off           ;
+; Detect glitches                                                                            ; Off                   ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                   ; Off           ;
+; Generate Signal Activity File                                                              ; Off                   ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                   ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                   ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                    ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE            ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                   ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                   ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                  ; Auto          ;
++--------------------------------------------------------------------------------------------+-----------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      87.67 % ;
+; Total nodes checked                                 ; 180          ;
+; Total output ports checked                          ; 227          ;
+; Total output ports with complete 1/0-value coverage ; 199          ;
+; Total output ports with no 1/0-value coverage       ; 13           ;
+; Total output ports with no 1-value coverage         ; 13           ;
+; Total output ports with no 0-value coverage         ; 28           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                              ;
++--------------------------------------------------------------+------------------------------------------------------------------------+------------------+
+; Node Name                                                    ; Output Port Name                                                       ; Output Port Type ;
++--------------------------------------------------------------+------------------------------------------------------------------------+------------------+
+; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1  ; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1            ; dataout2         ;
+; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1  ; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1~DATAOUT2   ; dataout4         ;
+; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1  ; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1~DATAOUT3   ; dataout5         ;
+; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1  ; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1~DATAOUT4   ; dataout6         ;
+; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1  ; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1~DATAOUT5   ; dataout7         ;
+; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1  ; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1~DATAOUT6   ; dataout8         ;
+; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1  ; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1~DATAOUT7   ; dataout9         ;
+; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1  ; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1~DATAOUT8   ; dataout10        ;
+; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1  ; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1~DATAOUT9   ; dataout11        ;
+; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1  ; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1~DATAOUT10  ; dataout12        ;
+; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1  ; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1~DATAOUT11  ; dataout13        ;
+; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1  ; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1~DATAOUT12  ; dataout14        ;
+; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1  ; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1~DATAOUT13  ; dataout15        ;
+; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1  ; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1~DATAOUT14  ; dataout16        ;
+; |Register_2|Add0~1                                           ; |Register_2|Add0~2                                                     ; cout             ;
+; |Register_2|Add0~5                                           ; |Register_2|Add0~5                                                     ; sumout           ;
+; |Register_2|Add0~5                                           ; |Register_2|Add0~6                                                     ; cout             ;
+; |Register_2|Add0~9                                           ; |Register_2|Add0~9                                                     ; sumout           ;
+; |Register_2|Add0~9                                           ; |Register_2|Add0~10                                                    ; cout             ;
+; |Register_2|Add0~13                                          ; |Register_2|Add0~13                                                    ; sumout           ;
+; |Register_2|Add0~13                                          ; |Register_2|Add0~14                                                    ; cout             ;
+; |Register_2|Add0~17                                          ; |Register_2|Add0~17                                                    ; sumout           ;
+; |Register_2|Add0~17                                          ; |Register_2|Add0~18                                                    ; cout             ;
+; |Register_2|Add0~21                                          ; |Register_2|Add0~21                                                    ; sumout           ;
+; |Register_2|Add0~21                                          ; |Register_2|Add0~22                                                    ; cout             ;
+; |Register_2|Add0~25                                          ; |Register_2|Add0~25                                                    ; sumout           ;
+; |Register_2|Add0~25                                          ; |Register_2|Add0~26                                                    ; cout             ;
+; |Register_2|Add0~29                                          ; |Register_2|Add0~29                                                    ; sumout           ;
+; |Register_2|Add0~29                                          ; |Register_2|Add0~30                                                    ; cout             ;
+; |Register_2|Add0~33                                          ; |Register_2|Add0~33                                                    ; sumout           ;
+; |Register_2|Add0~33                                          ; |Register_2|Add0~34                                                    ; cout             ;
+; |Register_2|Add0~37                                          ; |Register_2|Add0~37                                                    ; sumout           ;
+; |Register_2|Add0~37                                          ; |Register_2|Add0~38                                                    ; cout             ;
+; |Register_2|Add0~41                                          ; |Register_2|Add0~41                                                    ; sumout           ;
+; |Register_2|Add0~41                                          ; |Register_2|Add0~42                                                    ; cout             ;
+; |Register_2|Add0~45                                          ; |Register_2|Add0~45                                                    ; sumout           ;
+; |Register_2|Add0~45                                          ; |Register_2|Add0~46                                                    ; cout             ;
+; |Register_2|Add0~49                                          ; |Register_2|Add0~49                                                    ; sumout           ;
+; |Register_2|Add0~49                                          ; |Register_2|Add0~50                                                    ; cout             ;
+; |Register_2|Add0~53                                          ; |Register_2|Add0~53                                                    ; sumout           ;
+; |Register_2|Add0~53                                          ; |Register_2|Add0~54                                                    ; cout             ;
+; |Register_2|Add0~57                                          ; |Register_2|Add0~57                                                    ; sumout           ;
+; |Register_2|Add0~57                                          ; |Register_2|Add0~58                                                    ; cout             ;
+; |Register_2|Add0~61                                          ; |Register_2|Add0~61                                                    ; sumout           ;
+; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2 ; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2           ; dataout2         ;
+; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2 ; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2~DATAOUT2  ; dataout4         ;
+; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2 ; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2~DATAOUT3  ; dataout5         ;
+; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2 ; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2~DATAOUT4  ; dataout6         ;
+; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2 ; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2~DATAOUT5  ; dataout7         ;
+; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2 ; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2~DATAOUT6  ; dataout8         ;
+; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2 ; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2~DATAOUT7  ; dataout9         ;
+; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2 ; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2~DATAOUT8  ; dataout10        ;
+; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2 ; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2~DATAOUT9  ; dataout11        ;
+; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2 ; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2~DATAOUT10 ; dataout12        ;
+; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2 ; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2~DATAOUT11 ; dataout13        ;
+; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2 ; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2~DATAOUT12 ; dataout14        ;
+; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2 ; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2~DATAOUT13 ; dataout15        ;
+; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2 ; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2~DATAOUT14 ; dataout16        ;
+; |Register_2|result1[0]~reg0                                  ; |Register_2|result1[0]~reg0                                            ; regout           ;
+; |Register_2|result1[2]~reg0                                  ; |Register_2|result1[2]~reg0                                            ; regout           ;
+; |Register_2|result1[3]~reg0                                  ; |Register_2|result1[3]~reg0                                            ; regout           ;
+; |Register_2|result1[4]~reg0                                  ; |Register_2|result1[4]~reg0                                            ; regout           ;
+; |Register_2|result1[5]~reg0                                  ; |Register_2|result1[5]~reg0                                            ; regout           ;
+; |Register_2|result1[6]~reg0                                  ; |Register_2|result1[6]~reg0                                            ; regout           ;
+; |Register_2|result1[7]~reg0                                  ; |Register_2|result1[7]~reg0                                            ; regout           ;
+; |Register_2|result1[8]~reg0                                  ; |Register_2|result1[8]~reg0                                            ; regout           ;
+; |Register_2|result1[9]~reg0                                  ; |Register_2|result1[9]~reg0                                            ; regout           ;
+; |Register_2|result1[10]~reg0                                 ; |Register_2|result1[10]~reg0                                           ; regout           ;
+; |Register_2|result1[11]~reg0                                 ; |Register_2|result1[11]~reg0                                           ; regout           ;
+; |Register_2|result1[12]~reg0                                 ; |Register_2|result1[12]~reg0                                           ; regout           ;
+; |Register_2|result1[13]~reg0                                 ; |Register_2|result1[13]~reg0                                           ; regout           ;
+; |Register_2|result1[14]~reg0                                 ; |Register_2|result1[14]~reg0                                           ; regout           ;
+; |Register_2|result2[1]~reg0                                  ; |Register_2|result2[1]~reg0                                            ; regout           ;
+; |Register_2|result2[2]~reg0                                  ; |Register_2|result2[2]~reg0                                            ; regout           ;
+; |Register_2|result2[3]~reg0                                  ; |Register_2|result2[3]~reg0                                            ; regout           ;
+; |Register_2|result2[4]~reg0                                  ; |Register_2|result2[4]~reg0                                            ; regout           ;
+; |Register_2|result2[5]~reg0                                  ; |Register_2|result2[5]~reg0                                            ; regout           ;
+; |Register_2|result2[6]~reg0                                  ; |Register_2|result2[6]~reg0                                            ; regout           ;
+; |Register_2|result2[7]~reg0                                  ; |Register_2|result2[7]~reg0                                            ; regout           ;
+; |Register_2|result2[8]~reg0                                  ; |Register_2|result2[8]~reg0                                            ; regout           ;
+; |Register_2|result2[9]~reg0                                  ; |Register_2|result2[9]~reg0                                            ; regout           ;
+; |Register_2|result2[10]~reg0                                 ; |Register_2|result2[10]~reg0                                           ; regout           ;
+; |Register_2|result2[11]~reg0                                 ; |Register_2|result2[11]~reg0                                           ; regout           ;
+; |Register_2|result2[12]~reg0                                 ; |Register_2|result2[12]~reg0                                           ; regout           ;
+; |Register_2|result2[13]~reg0                                 ; |Register_2|result2[13]~reg0                                           ; regout           ;
+; |Register_2|result2[14]~reg0                                 ; |Register_2|result2[14]~reg0                                           ; regout           ;
+; |Register_2|C_delayed[0]~reg0                                ; |Register_2|C_delayed[0]~reg0                                          ; regout           ;
+; |Register_2|C_delayed[1]~reg0                                ; |Register_2|C_delayed[1]~reg0                                          ; regout           ;
+; |Register_2|C_delayed[2]~reg0                                ; |Register_2|C_delayed[2]~reg0                                          ; regout           ;
+; |Register_2|C_delayed[3]~reg0                                ; |Register_2|C_delayed[3]~reg0                                          ; regout           ;
+; |Register_2|C_delayed[4]~reg0                                ; |Register_2|C_delayed[4]~reg0                                          ; regout           ;
+; |Register_2|C_delayed[5]~reg0                                ; |Register_2|C_delayed[5]~reg0                                          ; regout           ;
+; |Register_2|C_delayed[6]~reg0                                ; |Register_2|C_delayed[6]~reg0                                          ; regout           ;
+; |Register_2|DATA_OUT[1]~reg0                                 ; |Register_2|DATA_OUT[1]~reg0                                           ; regout           ;
+; |Register_2|DATA_OUT[2]~reg0                                 ; |Register_2|DATA_OUT[2]~reg0                                           ; regout           ;
+; |Register_2|DATA_OUT[3]~reg0                                 ; |Register_2|DATA_OUT[3]~reg0                                           ; regout           ;
+; |Register_2|DATA_OUT[4]~reg0                                 ; |Register_2|DATA_OUT[4]~reg0                                           ; regout           ;
+; |Register_2|DATA_OUT[5]~reg0                                 ; |Register_2|DATA_OUT[5]~reg0                                           ; regout           ;
+; |Register_2|DATA_OUT[6]~reg0                                 ; |Register_2|DATA_OUT[6]~reg0                                           ; regout           ;
+; |Register_2|DATA_OUT[7]~reg0                                 ; |Register_2|DATA_OUT[7]~reg0                                           ; regout           ;
+; |Register_2|DATA_OUT[8]~reg0                                 ; |Register_2|DATA_OUT[8]~reg0                                           ; regout           ;
+; |Register_2|DATA_OUT[9]~reg0                                 ; |Register_2|DATA_OUT[9]~reg0                                           ; regout           ;
+; |Register_2|DATA_OUT[10]~reg0                                ; |Register_2|DATA_OUT[10]~reg0                                          ; regout           ;
+; |Register_2|DATA_OUT[11]~reg0                                ; |Register_2|DATA_OUT[11]~reg0                                          ; regout           ;
+; |Register_2|DATA_OUT[12]~reg0                                ; |Register_2|DATA_OUT[12]~reg0                                          ; regout           ;
+; |Register_2|DATA_OUT[13]~reg0                                ; |Register_2|DATA_OUT[13]~reg0                                          ; regout           ;
+; |Register_2|DATA_OUT[14]~reg0                                ; |Register_2|DATA_OUT[14]~reg0                                          ; regout           ;
+; |Register_2|result1[0]                                       ; |Register_2|result1[0]                                                 ; padio            ;
+; |Register_2|result1[2]                                       ; |Register_2|result1[2]                                                 ; padio            ;
+; |Register_2|result1[3]                                       ; |Register_2|result1[3]                                                 ; padio            ;
+; |Register_2|result1[4]                                       ; |Register_2|result1[4]                                                 ; padio            ;
+; |Register_2|result1[5]                                       ; |Register_2|result1[5]                                                 ; padio            ;
+; |Register_2|result1[6]                                       ; |Register_2|result1[6]                                                 ; padio            ;
+; |Register_2|result1[7]                                       ; |Register_2|result1[7]                                                 ; padio            ;
+; |Register_2|result1[8]                                       ; |Register_2|result1[8]                                                 ; padio            ;
+; |Register_2|result1[9]                                       ; |Register_2|result1[9]                                                 ; padio            ;
+; |Register_2|result1[10]                                      ; |Register_2|result1[10]                                                ; padio            ;
+; |Register_2|result1[11]                                      ; |Register_2|result1[11]                                                ; padio            ;
+; |Register_2|result1[12]                                      ; |Register_2|result1[12]                                                ; padio            ;
+; |Register_2|result1[13]                                      ; |Register_2|result1[13]                                                ; padio            ;
+; |Register_2|result1[14]                                      ; |Register_2|result1[14]                                                ; padio            ;
+; |Register_2|result2[1]                                       ; |Register_2|result2[1]                                                 ; padio            ;
+; |Register_2|result2[2]                                       ; |Register_2|result2[2]                                                 ; padio            ;
+; |Register_2|result2[3]                                       ; |Register_2|result2[3]                                                 ; padio            ;
+; |Register_2|result2[4]                                       ; |Register_2|result2[4]                                                 ; padio            ;
+; |Register_2|result2[5]                                       ; |Register_2|result2[5]                                                 ; padio            ;
+; |Register_2|result2[6]                                       ; |Register_2|result2[6]                                                 ; padio            ;
+; |Register_2|result2[7]                                       ; |Register_2|result2[7]                                                 ; padio            ;
+; |Register_2|result2[8]                                       ; |Register_2|result2[8]                                                 ; padio            ;
+; |Register_2|result2[9]                                       ; |Register_2|result2[9]                                                 ; padio            ;
+; |Register_2|result2[10]                                      ; |Register_2|result2[10]                                                ; padio            ;
+; |Register_2|result2[11]                                      ; |Register_2|result2[11]                                                ; padio            ;
+; |Register_2|result2[12]                                      ; |Register_2|result2[12]                                                ; padio            ;
+; |Register_2|result2[13]                                      ; |Register_2|result2[13]                                                ; padio            ;
+; |Register_2|result2[14]                                      ; |Register_2|result2[14]                                                ; padio            ;
+; |Register_2|C_delayed[0]                                     ; |Register_2|C_delayed[0]                                               ; padio            ;
+; |Register_2|C_delayed[1]                                     ; |Register_2|C_delayed[1]                                               ; padio            ;
+; |Register_2|C_delayed[2]                                     ; |Register_2|C_delayed[2]                                               ; padio            ;
+; |Register_2|C_delayed[3]                                     ; |Register_2|C_delayed[3]                                               ; padio            ;
+; |Register_2|C_delayed[4]                                     ; |Register_2|C_delayed[4]                                               ; padio            ;
+; |Register_2|C_delayed[5]                                     ; |Register_2|C_delayed[5]                                               ; padio            ;
+; |Register_2|C_delayed[6]                                     ; |Register_2|C_delayed[6]                                               ; padio            ;
+; |Register_2|DATA_OUT[1]                                      ; |Register_2|DATA_OUT[1]                                                ; padio            ;
+; |Register_2|DATA_OUT[2]                                      ; |Register_2|DATA_OUT[2]                                                ; padio            ;
+; |Register_2|DATA_OUT[3]                                      ; |Register_2|DATA_OUT[3]                                                ; padio            ;
+; |Register_2|DATA_OUT[4]                                      ; |Register_2|DATA_OUT[4]                                                ; padio            ;
+; |Register_2|DATA_OUT[5]                                      ; |Register_2|DATA_OUT[5]                                                ; padio            ;
+; |Register_2|DATA_OUT[6]                                      ; |Register_2|DATA_OUT[6]                                                ; padio            ;
+; |Register_2|DATA_OUT[7]                                      ; |Register_2|DATA_OUT[7]                                                ; padio            ;
+; |Register_2|DATA_OUT[8]                                      ; |Register_2|DATA_OUT[8]                                                ; padio            ;
+; |Register_2|DATA_OUT[9]                                      ; |Register_2|DATA_OUT[9]                                                ; padio            ;
+; |Register_2|DATA_OUT[10]                                     ; |Register_2|DATA_OUT[10]                                               ; padio            ;
+; |Register_2|DATA_OUT[11]                                     ; |Register_2|DATA_OUT[11]                                               ; padio            ;
+; |Register_2|DATA_OUT[12]                                     ; |Register_2|DATA_OUT[12]                                               ; padio            ;
+; |Register_2|DATA_OUT[13]                                     ; |Register_2|DATA_OUT[13]                                               ; padio            ;
+; |Register_2|DATA_OUT[14]                                     ; |Register_2|DATA_OUT[14]                                               ; padio            ;
+; |Register_2|clk                                              ; |Register_2|clk~corein                                                 ; combout          ;
+; |Register_2|C[0]                                             ; |Register_2|C[0]~corein                                                ; combout          ;
+; |Register_2|C[1]                                             ; |Register_2|C[1]~corein                                                ; combout          ;
+; |Register_2|C[2]                                             ; |Register_2|C[2]~corein                                                ; combout          ;
+; |Register_2|C[3]                                             ; |Register_2|C[3]~corein                                                ; combout          ;
+; |Register_2|C[4]                                             ; |Register_2|C[4]~corein                                                ; combout          ;
+; |Register_2|C[5]                                             ; |Register_2|C[5]~corein                                                ; combout          ;
+; |Register_2|C[6]                                             ; |Register_2|C[6]~corein                                                ; combout          ;
+; |Register_2|A[0]                                             ; |Register_2|A[0]~corein                                                ; combout          ;
+; |Register_2|A[1]                                             ; |Register_2|A[1]~corein                                                ; combout          ;
+; |Register_2|A[2]                                             ; |Register_2|A[2]~corein                                                ; combout          ;
+; |Register_2|A[3]                                             ; |Register_2|A[3]~corein                                                ; combout          ;
+; |Register_2|A[4]                                             ; |Register_2|A[4]~corein                                                ; combout          ;
+; |Register_2|A[5]                                             ; |Register_2|A[5]~corein                                                ; combout          ;
+; |Register_2|A[6]                                             ; |Register_2|A[6]~corein                                                ; combout          ;
+; |Register_2|B[0]                                             ; |Register_2|B[0]~corein                                                ; combout          ;
+; |Register_2|B[1]                                             ; |Register_2|B[1]~corein                                                ; combout          ;
+; |Register_2|B[2]                                             ; |Register_2|B[2]~corein                                                ; combout          ;
+; |Register_2|B[3]                                             ; |Register_2|B[3]~corein                                                ; combout          ;
+; |Register_2|B[4]                                             ; |Register_2|B[4]~corein                                                ; combout          ;
+; |Register_2|B[5]                                             ; |Register_2|B[5]~corein                                                ; combout          ;
+; |Register_2|B[6]                                             ; |Register_2|B[6]~corein                                                ; combout          ;
+; |Register_2|clk~clkctrl                                      ; |Register_2|clk~clkctrl                                                ; outclk           ;
+; |Register_2|result1[0]~reg0feeder                            ; |Register_2|result1[0]~reg0feeder                                      ; combout          ;
+; |Register_2|result1[2]~reg0feeder                            ; |Register_2|result1[2]~reg0feeder                                      ; combout          ;
+; |Register_2|result1[4]~reg0feeder                            ; |Register_2|result1[4]~reg0feeder                                      ; combout          ;
+; |Register_2|result1[5]~reg0feeder                            ; |Register_2|result1[5]~reg0feeder                                      ; combout          ;
+; |Register_2|result1[7]~reg0feeder                            ; |Register_2|result1[7]~reg0feeder                                      ; combout          ;
+; |Register_2|result1[8]~reg0feeder                            ; |Register_2|result1[8]~reg0feeder                                      ; combout          ;
+; |Register_2|result1[9]~reg0feeder                            ; |Register_2|result1[9]~reg0feeder                                      ; combout          ;
+; |Register_2|result1[11]~reg0feeder                           ; |Register_2|result1[11]~reg0feeder                                     ; combout          ;
+; |Register_2|result1[12]~reg0feeder                           ; |Register_2|result1[12]~reg0feeder                                     ; combout          ;
+; |Register_2|result1[13]~reg0feeder                           ; |Register_2|result1[13]~reg0feeder                                     ; combout          ;
+; |Register_2|DATA_OUT[2]~reg0feeder                           ; |Register_2|DATA_OUT[2]~reg0feeder                                     ; combout          ;
+; |Register_2|DATA_OUT[5]~reg0feeder                           ; |Register_2|DATA_OUT[5]~reg0feeder                                     ; combout          ;
+; |Register_2|DATA_OUT[7]~reg0feeder                           ; |Register_2|DATA_OUT[7]~reg0feeder                                     ; combout          ;
+; |Register_2|DATA_OUT[9]~reg0feeder                           ; |Register_2|DATA_OUT[9]~reg0feeder                                     ; combout          ;
+; |Register_2|DATA_OUT[11]~reg0feeder                          ; |Register_2|DATA_OUT[11]~reg0feeder                                    ; combout          ;
+; |Register_2|DATA_OUT[12]~reg0feeder                          ; |Register_2|DATA_OUT[12]~reg0feeder                                    ; combout          ;
+; |Register_2|C_delayed[0]~reg0feeder                          ; |Register_2|C_delayed[0]~reg0feeder                                    ; combout          ;
+; |Register_2|C_delayed[2]~reg0feeder                          ; |Register_2|C_delayed[2]~reg0feeder                                    ; combout          ;
+; |Register_2|C_delayed[3]~reg0feeder                          ; |Register_2|C_delayed[3]~reg0feeder                                    ; combout          ;
+; |Register_2|C_delayed[5]~reg0feeder                          ; |Register_2|C_delayed[5]~reg0feeder                                    ; combout          ;
++--------------------------------------------------------------+------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                ;
++--------------------------------------------------------------+-----------------------------------------------------------------------+------------------+
+; Node Name                                                    ; Output Port Name                                                      ; Output Port Type ;
++--------------------------------------------------------------+-----------------------------------------------------------------------+------------------+
+; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1  ; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1~DATAOUT1  ; dataout3         ;
+; |Register_2|Add0~1                                           ; |Register_2|Add0~1                                                    ; sumout           ;
+; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2 ; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2~2        ; dataout0         ;
+; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2 ; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2~3        ; dataout1         ;
+; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2 ; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2~DATAOUT1 ; dataout3         ;
+; |Register_2|result1[1]~reg0                                  ; |Register_2|result1[1]~reg0                                           ; regout           ;
+; |Register_2|result2[0]~reg0                                  ; |Register_2|result2[0]~reg0                                           ; regout           ;
+; |Register_2|DATA_OUT[0]~reg0                                 ; |Register_2|DATA_OUT[0]~reg0                                          ; regout           ;
+; |Register_2|result1[1]                                       ; |Register_2|result1[1]                                                ; padio            ;
+; |Register_2|result2[0]                                       ; |Register_2|result2[0]                                                ; padio            ;
+; |Register_2|DATA_OUT[0]                                      ; |Register_2|DATA_OUT[0]                                               ; padio            ;
+; |Register_2|result1[1]~reg0feeder                            ; |Register_2|result1[1]~reg0feeder                                     ; combout          ;
+; |Register_2|DATA_OUT[0]~reg0feeder                           ; |Register_2|DATA_OUT[0]~reg0feeder                                    ; combout          ;
++--------------------------------------------------------------+-----------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                 ;
++--------------------------------------------------------------+------------------------------------------------------------------------+------------------+
+; Node Name                                                    ; Output Port Name                                                       ; Output Port Type ;
++--------------------------------------------------------------+------------------------------------------------------------------------+------------------+
+; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1  ; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1~DATAOUT1   ; dataout3         ;
+; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1  ; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1~DATAOUT15  ; dataout17        ;
+; |Register_2|Add0~1                                           ; |Register_2|Add0~1                                                     ; sumout           ;
+; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2 ; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2~2         ; dataout0         ;
+; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2 ; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2~3         ; dataout1         ;
+; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2 ; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2~DATAOUT1  ; dataout3         ;
+; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2 ; |Register_2|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2~DATAOUT15 ; dataout17        ;
+; |Register_2|result1[1]~reg0                                  ; |Register_2|result1[1]~reg0                                            ; regout           ;
+; |Register_2|result1[15]~reg0                                 ; |Register_2|result1[15]~reg0                                           ; regout           ;
+; |Register_2|result2[0]~reg0                                  ; |Register_2|result2[0]~reg0                                            ; regout           ;
+; |Register_2|result2[15]~reg0                                 ; |Register_2|result2[15]~reg0                                           ; regout           ;
+; |Register_2|C_delayed[7]~reg0                                ; |Register_2|C_delayed[7]~reg0                                          ; regout           ;
+; |Register_2|DATA_OUT[0]~reg0                                 ; |Register_2|DATA_OUT[0]~reg0                                           ; regout           ;
+; |Register_2|DATA_OUT[15]~reg0                                ; |Register_2|DATA_OUT[15]~reg0                                          ; regout           ;
+; |Register_2|result1[1]                                       ; |Register_2|result1[1]                                                 ; padio            ;
+; |Register_2|result1[15]                                      ; |Register_2|result1[15]                                                ; padio            ;
+; |Register_2|result2[0]                                       ; |Register_2|result2[0]                                                 ; padio            ;
+; |Register_2|result2[15]                                      ; |Register_2|result2[15]                                                ; padio            ;
+; |Register_2|C_delayed[7]                                     ; |Register_2|C_delayed[7]                                               ; padio            ;
+; |Register_2|DATA_OUT[0]                                      ; |Register_2|DATA_OUT[0]                                                ; padio            ;
+; |Register_2|DATA_OUT[15]                                     ; |Register_2|DATA_OUT[15]                                               ; padio            ;
+; |Register_2|C[7]                                             ; |Register_2|C[7]~corein                                                ; combout          ;
+; |Register_2|A[7]                                             ; |Register_2|A[7]~corein                                                ; combout          ;
+; |Register_2|B[7]                                             ; |Register_2|B[7]~corein                                                ; combout          ;
+; |Register_2|result1[1]~reg0feeder                            ; |Register_2|result1[1]~reg0feeder                                      ; combout          ;
+; |Register_2|result1[15]~reg0feeder                           ; |Register_2|result1[15]~reg0feeder                                     ; combout          ;
+; |Register_2|DATA_OUT[0]~reg0feeder                           ; |Register_2|DATA_OUT[0]~reg0feeder                                     ; combout          ;
+; |Register_2|C_delayed[7]~reg0feeder                          ; |Register_2|C_delayed[7]~reg0feeder                                    ; combout          ;
++--------------------------------------------------------------+------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 222 10/21/2009 SJ Full Version
+    Info: Processing started: Sun Sep 29 17:44:34 2024
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off exercise2 -c exercise2
+Info: Using vector source file "C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/Kopylov/register_paramexe.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      87.67 %
+Info: Number of transitions in simulation is 16007
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 167 megabytes
+    Info: Processing ended: Sun Sep 29 17:44:34 2024
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+
