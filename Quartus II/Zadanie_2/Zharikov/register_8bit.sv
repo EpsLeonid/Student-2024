@@ -1,21 +1,19 @@
 module register_8bit (
-    input logic clk,         // Clock signal
-    input logic reset_n,     // Active-low reset signal
-    input logic [7:0] A,     // Input data A
-    input logic [7:0] B,     // Input data B
-    input logic [7:0] C,     // Input data C
-    output logic [7:0] DATA_OUT // Output data
+    input logic clk,             // Clock signal
+    input logic [7:0] A,         // Input signal A
+    input logic [7:0] B,         // Input signal B
+    input logic [7:0] C,         // Input signal C
+    output logic [7:0] DATA_OUT // Output signal
 );
 
-    // Process, which is triggered on the rising edge of the clock or the falling edge of reset
-    always_ff @(posedge clk or negedge reset_n) begin
-        if (!reset_n) begin
-            // Reset output to zero on active low reset
-            DATA_OUT <= 8'b0;
-        end else begin
-            // Perform the operation
-            DATA_OUT <= (A * B) + C;
-        end
-    end
+// Register to store the previous value of input C
+reg [7:0] C_reg;           // Register for C
+
+// Always block to update the registers and compute the output
+always_ff @(posedge clk) begin
+    C_reg <= C;              // Store value of C
+    // Calculate the result using inputs A, B, and the stored C value
+    DATA_OUT <= A * B + C_reg;
+end
 
 endmodule

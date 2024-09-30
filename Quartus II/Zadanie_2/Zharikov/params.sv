@@ -1,7 +1,7 @@
 // The maximum we can represent with an 8-bit signed number, which we must use, is:
 // Maximum value of an 8-bit signed number: (2^8 - 1 = 255)
 // Maximum value represented by two 8-bit signed numbers: (255 * 255 = 65025)
-// 65025 is represented in 16 bits.
+// 65025+255=65280 is represented in 16 bits.
 `ifndef PARAMS_SV
 `define PARAMS_SV
 
