@@ -1,0 +1,30 @@
+C:/Users/Saga/Desktop/Qart/multiplier.sv {1 {vlog -work work -sv -nocovercells C:/Users/Saga/Desktop/Qart/multiplier.sv
+Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+-- Compiling module multiplier
+
+Top level modules:
+	multiplier
+
+} {} {}} C:/Users/Saga/Desktop/Qart/d_flipflop.sv {1 {vlog -work work -sv -nocovercells C:/Users/Saga/Desktop/Qart/d_flipflop.sv
+Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+-- Compiling module d_flipflop
+
+Top level modules:
+	d_flipflop
+
+} {} {}} C:/Users/Saga/Desktop/Qart/register_8bit.sv {1 {vlog -work work -sv -nocovercells C:/Users/Saga/Desktop/Qart/register_8bit.sv
+Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+-- Compiling module register_8bit
+
+Top level modules:
+	register_8bit
+
+} {} {}} C:/Users/Saga/Desktop/Qart/register_parametrized.sv {1 {vlog -work work -sv -nocovercells C:/Users/Saga/Desktop/Qart/register_parametrized.sv
+Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+-- Compiling package register_parametrized_sv_unit
+-- Compiling module register_parametrized
+
+Top level modules:
+	register_parametrized
+
+} {} {}}
