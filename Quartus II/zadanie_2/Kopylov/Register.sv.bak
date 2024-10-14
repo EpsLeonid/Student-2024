@@ -1,0 +1,53 @@
+`include "include1.inc"
+    
+module Register (
+    input logic clk,           // Сигнал тактирования (200 МГц)
+    input logic reset_n,       // Асинхронный сброс (активный низкий)
+    input logic [WIDTH-1:0] A,       // Входные данные A (8 бит)
+    input logic [WIDTH-1:0] B,       // Входные данные B (8 бит)
+    input logic [WIDTH-1:0] C,
+    output logic [OUT_WIDTH-1:0] mult_result,
+    output logic [OUT_WIDTH-1:0] mult_result_d,
+    output logic [WIDTH-1:0] C_d_1,
+    output logic [WIDTH-1:0] C_d_2, 
+    output logic [OUT_WIDTH-1:0] sum_result,
+    output logic [OUT_WIDTH-1:0] sum_result_d,       // Входные данные C (8 бит)
+    output logic [OUT_WIDTH-1:0] result // Результат умножения и сложения
+);
+
+    always_ff @(posedge clk or negedge reset_n) begin
+        if (!reset_n) begin
+			C_d_1 <= 8'd0;
+			C_d_2 <= 8'd0;
+            mult_result <= 16'd0;
+            mult_result_d <= 16'd0;
+            sum_result <= 16'd0;
+            sum_result_d <= 16'd0;
+            result <= 16'd0;
+        end else begin
+			
+			//C_d_1 <= C;
+			
+        
+            // 1. Умножение A и B (16-битный результат)
+            
+            mult_result <= A * B;
+            //C_d_1 <= C;
+            //C_d_2 <= C_d_1;
+            // 2. Регистрация промежуточного результата умножения (учет задержки умножения)
+            
+            mult_result_d <= mult_result;
+            C_d_1 <= C;
+            C_d_2 <= C_d_1;
+           
+            // 3. Сложение с данными C (C расширяется до 16 бит для корректного сложения
+            sum_result <= mult_result_d + {8'd0, C_d_2};
+            sum_result_d <= sum_result;
+			
+            // 4. Выдача результата
+            result <= sum_result_d;
+        end
+    end
+
+endmodule
+

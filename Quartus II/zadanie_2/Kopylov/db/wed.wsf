@@ -20,17 +20,1093 @@ Altera or its authorized distributors.  Please refer to the
 applicable agreement for further details.
 */
 
-VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/Kopylov/dtriggerexe.vwf")
+VECTOR("C:/Users/Alieksandr/Documents/Programm/Verilog_2/Register.vwf")
 {
 	ZOOM{
 		ZBEGIN = 0;
-		ZEND = 0;
-		NUMERATOR = 0;
-		DENOMINATOR = 0;
+		ZEND = 53200;
+		NUMERATOR = 1064;
+		DENOMINATOR = 53200;
 		TOP_INDEX = 0;
 	}
 	CLOCK{
-		PERIOD = 10000;
+		PERIOD = 5000;
+		OFFSET = 0;
+		DUTY_CYCLE = 50;
+	}
+	RANDOM_VALUE{
+		INTERVAL_TYPE = USER;
+		USER_INTERVAL = 5000;
+	}
+	LINE{
+		SIGNAL = "A";
+		INDEX = 0;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A[7]";
+		INDEX = 1;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A[6]";
+		INDEX = 2;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A[5]";
+		INDEX = 3;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A[4]";
+		INDEX = 4;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A[3]";
+		INDEX = 5;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A[2]";
+		INDEX = 6;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A[1]";
+		INDEX = 7;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "A[0]";
+		INDEX = 8;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "B";
+		INDEX = 9;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "B[7]";
+		INDEX = 10;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "B[6]";
+		INDEX = 11;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "B[5]";
+		INDEX = 12;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "B[4]";
+		INDEX = 13;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "B[3]";
+		INDEX = 14;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "B[2]";
+		INDEX = 15;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "B[1]";
+		INDEX = 16;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "B[0]";
+		INDEX = 17;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "C";
+		INDEX = 18;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "C[7]";
+		INDEX = 19;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "C[6]";
+		INDEX = 20;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "C[5]";
+		INDEX = 21;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "C[4]";
+		INDEX = 22;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "C[3]";
+		INDEX = 23;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "C[2]";
+		INDEX = 24;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "C[1]";
+		INDEX = 25;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "C[0]";
+		INDEX = 26;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "clk";
+		INDEX = 27;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "reset_n";
+		INDEX = 28;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "mult_result";
+		INDEX = 29;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "mult_result[15]";
+		INDEX = 30;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "mult_result[14]";
+		INDEX = 31;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "mult_result[13]";
+		INDEX = 32;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "mult_result[12]";
+		INDEX = 33;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "mult_result[11]";
+		INDEX = 34;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "mult_result[10]";
+		INDEX = 35;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "mult_result[9]";
+		INDEX = 36;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "mult_result[8]";
+		INDEX = 37;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "mult_result[7]";
+		INDEX = 38;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "mult_result[6]";
+		INDEX = 39;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "mult_result[5]";
+		INDEX = 40;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "mult_result[4]";
+		INDEX = 41;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "mult_result[3]";
+		INDEX = 42;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "mult_result[2]";
+		INDEX = 43;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "mult_result[1]";
+		INDEX = 44;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "mult_result[0]";
+		INDEX = 45;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "C_d_1";
+		INDEX = 46;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "C_d_1[7]";
+		INDEX = 47;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "C_d_1[6]";
+		INDEX = 48;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "C_d_1[5]";
+		INDEX = 49;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "C_d_1[4]";
+		INDEX = 50;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "C_d_1[3]";
+		INDEX = 51;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "C_d_1[2]";
+		INDEX = 52;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "C_d_1[1]";
+		INDEX = 53;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "C_d_1[0]";
+		INDEX = 54;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "mult_result_d";
+		INDEX = 55;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "mult_result_d[15]";
+		INDEX = 56;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "mult_result_d[14]";
+		INDEX = 57;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "mult_result_d[13]";
+		INDEX = 58;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "mult_result_d[12]";
+		INDEX = 59;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "mult_result_d[11]";
+		INDEX = 60;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "mult_result_d[10]";
+		INDEX = 61;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "mult_result_d[9]";
+		INDEX = 62;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "mult_result_d[8]";
+		INDEX = 63;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "mult_result_d[7]";
+		INDEX = 64;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "mult_result_d[6]";
+		INDEX = 65;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "mult_result_d[5]";
+		INDEX = 66;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "mult_result_d[4]";
+		INDEX = 67;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "mult_result_d[3]";
+		INDEX = 68;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "mult_result_d[2]";
+		INDEX = 69;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "mult_result_d[1]";
+		INDEX = 70;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "mult_result_d[0]";
+		INDEX = 71;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "C_d_2";
+		INDEX = 72;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "C_d_2[7]";
+		INDEX = 73;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "C_d_2[6]";
+		INDEX = 74;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "C_d_2[5]";
+		INDEX = 75;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "C_d_2[4]";
+		INDEX = 76;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "C_d_2[3]";
+		INDEX = 77;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "C_d_2[2]";
+		INDEX = 78;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "C_d_2[1]";
+		INDEX = 79;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "C_d_2[0]";
+		INDEX = 80;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result";
+		INDEX = 81;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result[15]";
+		INDEX = 82;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result[14]";
+		INDEX = 83;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result[13]";
+		INDEX = 84;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result[12]";
+		INDEX = 85;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result[11]";
+		INDEX = 86;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result[10]";
+		INDEX = 87;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result[9]";
+		INDEX = 88;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result[8]";
+		INDEX = 89;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result[7]";
+		INDEX = 90;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result[6]";
+		INDEX = 91;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result[5]";
+		INDEX = 92;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result[4]";
+		INDEX = 93;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result[3]";
+		INDEX = 94;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result[2]";
+		INDEX = 95;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result[1]";
+		INDEX = 96;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result[0]";
+		INDEX = 97;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d";
+		INDEX = 98;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d[15]";
+		INDEX = 99;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d[14]";
+		INDEX = 100;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d[13]";
+		INDEX = 101;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d[12]";
+		INDEX = 102;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d[11]";
+		INDEX = 103;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d[10]";
+		INDEX = 104;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d[9]";
+		INDEX = 105;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d[8]";
+		INDEX = 106;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d[7]";
+		INDEX = 107;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d[6]";
+		INDEX = 108;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d[5]";
+		INDEX = 109;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d[4]";
+		INDEX = 110;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d[3]";
+		INDEX = 111;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d[2]";
+		INDEX = 112;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d[1]";
+		INDEX = 113;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d[0]";
+		INDEX = 114;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result";
+		INDEX = 115;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result[15]";
+		INDEX = 116;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result[14]";
+		INDEX = 117;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result[13]";
+		INDEX = 118;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result[12]";
+		INDEX = 119;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result[11]";
+		INDEX = 120;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result[10]";
+		INDEX = 121;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result[9]";
+		INDEX = 122;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result[8]";
+		INDEX = 123;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result[7]";
+		INDEX = 124;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result[6]";
+		INDEX = 125;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result[5]";
+		INDEX = 126;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result[4]";
+		INDEX = 127;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result[3]";
+		INDEX = 128;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result[2]";
+		INDEX = 129;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result[1]";
+		INDEX = 130;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result[0]";
+		INDEX = 131;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+}
+
+VECTOR("C:/Users/Alieksandr/Documents/Programm/Verilog_2/D_trigger.vwf")
+{
+	ZOOM{
+		ZBEGIN = 0;
+		ZEND = 1000000;
+		NUMERATOR = 20;
+		DENOMINATOR = 1000;
+		TOP_INDEX = 0;
+	}
+	CLOCK{
+		PERIOD = 5000;
 		OFFSET = 0;
 		DUTY_CYCLE = 50;
 	}
@@ -63,13 +1139,13 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 	}
 }
 
-VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/Kopylov/multexe.vwf")
+VECTOR("C:/Users/Alieksandr/Documents/Programm/Verilog_2/Multiplication.vwf")
 {
 	ZOOM{
 		ZBEGIN = 0;
-		ZEND = 0;
-		NUMERATOR = 0;
-		DENOMINATOR = 0;
+		ZEND = 1000000;
+		NUMERATOR = 20;
+		DENOMINATOR = 1000;
 		TOP_INDEX = 0;
 	}
 	CLOCK{
@@ -106,13 +1182,13 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 	}
 }
 
-VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/Kopylov/register_paramexe.vwf")
+VECTOR("C:/Users/Alieksandr/Documents/Programm/Verilog_2/db/Task2.sim.cvwf")
 {
 	ZOOM{
 		ZBEGIN = 0;
-		ZEND = 31750;
-		NUMERATOR = 20;
-		DENOMINATOR = 1000;
+		ZEND = 46966;
+		NUMERATOR = 882;
+		DENOMINATOR = 46966;
 		TOP_INDEX = 0;
 	}
 	CLOCK{
@@ -340,15 +1416,15 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result1";
+		SIGNAL = "clk";
 		INDEX = 27;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result1[15]";
+		SIGNAL = "reset_n";
 		INDEX = 28;
 		FORMAT = E;
 		SCALE = 1;
@@ -356,15 +1432,15 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result1[14]";
+		SIGNAL = "mult_result";
 		INDEX = 29;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result1[13]";
+		SIGNAL = "mult_result[15]";
 		INDEX = 30;
 		FORMAT = E;
 		SCALE = 1;
@@ -372,7 +1448,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result1[12]";
+		SIGNAL = "mult_result[14]";
 		INDEX = 31;
 		FORMAT = E;
 		SCALE = 1;
@@ -380,7 +1456,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result1[11]";
+		SIGNAL = "mult_result[13]";
 		INDEX = 32;
 		FORMAT = E;
 		SCALE = 1;
@@ -388,7 +1464,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result1[10]";
+		SIGNAL = "mult_result[12]";
 		INDEX = 33;
 		FORMAT = E;
 		SCALE = 1;
@@ -396,7 +1472,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result1[9]";
+		SIGNAL = "mult_result[11]";
 		INDEX = 34;
 		FORMAT = E;
 		SCALE = 1;
@@ -404,7 +1480,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result1[8]";
+		SIGNAL = "mult_result[10]";
 		INDEX = 35;
 		FORMAT = E;
 		SCALE = 1;
@@ -412,7 +1488,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result1[7]";
+		SIGNAL = "mult_result[9]";
 		INDEX = 36;
 		FORMAT = E;
 		SCALE = 1;
@@ -420,7 +1496,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result1[6]";
+		SIGNAL = "mult_result[8]";
 		INDEX = 37;
 		FORMAT = E;
 		SCALE = 1;
@@ -428,7 +1504,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result1[5]";
+		SIGNAL = "mult_result[7]";
 		INDEX = 38;
 		FORMAT = E;
 		SCALE = 1;
@@ -436,7 +1512,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result1[4]";
+		SIGNAL = "mult_result[6]";
 		INDEX = 39;
 		FORMAT = E;
 		SCALE = 1;
@@ -444,7 +1520,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result1[3]";
+		SIGNAL = "mult_result[5]";
 		INDEX = 40;
 		FORMAT = E;
 		SCALE = 1;
@@ -452,7 +1528,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result1[2]";
+		SIGNAL = "mult_result[4]";
 		INDEX = 41;
 		FORMAT = E;
 		SCALE = 1;
@@ -460,7 +1536,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result1[1]";
+		SIGNAL = "mult_result[3]";
 		INDEX = 42;
 		FORMAT = E;
 		SCALE = 1;
@@ -468,7 +1544,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result1[0]";
+		SIGNAL = "mult_result[2]";
 		INDEX = 43;
 		FORMAT = E;
 		SCALE = 1;
@@ -476,15 +1552,15 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "C_delayed";
+		SIGNAL = "mult_result[1]";
 		INDEX = 44;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "C_delayed[7]";
+		SIGNAL = "mult_result[0]";
 		INDEX = 45;
 		FORMAT = E;
 		SCALE = 1;
@@ -492,15 +1568,15 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "C_delayed[6]";
+		SIGNAL = "C_d_1";
 		INDEX = 46;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "C_delayed[5]";
+		SIGNAL = "C_d_1[7]";
 		INDEX = 47;
 		FORMAT = E;
 		SCALE = 1;
@@ -508,7 +1584,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "C_delayed[4]";
+		SIGNAL = "C_d_1[6]";
 		INDEX = 48;
 		FORMAT = E;
 		SCALE = 1;
@@ -516,7 +1592,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "C_delayed[3]";
+		SIGNAL = "C_d_1[5]";
 		INDEX = 49;
 		FORMAT = E;
 		SCALE = 1;
@@ -524,7 +1600,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "C_delayed[2]";
+		SIGNAL = "C_d_1[4]";
 		INDEX = 50;
 		FORMAT = E;
 		SCALE = 1;
@@ -532,7 +1608,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "C_delayed[1]";
+		SIGNAL = "C_d_1[3]";
 		INDEX = 51;
 		FORMAT = E;
 		SCALE = 1;
@@ -540,7 +1616,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "C_delayed[0]";
+		SIGNAL = "C_d_1[2]";
 		INDEX = 52;
 		FORMAT = E;
 		SCALE = 1;
@@ -548,15 +1624,15 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result2";
+		SIGNAL = "C_d_1[1]";
 		INDEX = 53;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result2[15]";
+		SIGNAL = "C_d_1[0]";
 		INDEX = 54;
 		FORMAT = E;
 		SCALE = 1;
@@ -564,15 +1640,15 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result2[14]";
+		SIGNAL = "mult_result_d";
 		INDEX = 55;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result2[13]";
+		SIGNAL = "mult_result_d[15]";
 		INDEX = 56;
 		FORMAT = E;
 		SCALE = 1;
@@ -580,7 +1656,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result2[12]";
+		SIGNAL = "mult_result_d[14]";
 		INDEX = 57;
 		FORMAT = E;
 		SCALE = 1;
@@ -588,7 +1664,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result2[11]";
+		SIGNAL = "mult_result_d[13]";
 		INDEX = 58;
 		FORMAT = E;
 		SCALE = 1;
@@ -596,7 +1672,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result2[10]";
+		SIGNAL = "mult_result_d[12]";
 		INDEX = 59;
 		FORMAT = E;
 		SCALE = 1;
@@ -604,7 +1680,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result2[9]";
+		SIGNAL = "mult_result_d[11]";
 		INDEX = 60;
 		FORMAT = E;
 		SCALE = 1;
@@ -612,7 +1688,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result2[8]";
+		SIGNAL = "mult_result_d[10]";
 		INDEX = 61;
 		FORMAT = E;
 		SCALE = 1;
@@ -620,7 +1696,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result2[7]";
+		SIGNAL = "mult_result_d[9]";
 		INDEX = 62;
 		FORMAT = E;
 		SCALE = 1;
@@ -628,7 +1704,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result2[6]";
+		SIGNAL = "mult_result_d[8]";
 		INDEX = 63;
 		FORMAT = E;
 		SCALE = 1;
@@ -636,7 +1712,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result2[5]";
+		SIGNAL = "mult_result_d[7]";
 		INDEX = 64;
 		FORMAT = E;
 		SCALE = 1;
@@ -644,7 +1720,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result2[4]";
+		SIGNAL = "mult_result_d[6]";
 		INDEX = 65;
 		FORMAT = E;
 		SCALE = 1;
@@ -652,7 +1728,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result2[3]";
+		SIGNAL = "mult_result_d[5]";
 		INDEX = 66;
 		FORMAT = E;
 		SCALE = 1;
@@ -660,7 +1736,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result2[2]";
+		SIGNAL = "mult_result_d[4]";
 		INDEX = 67;
 		FORMAT = E;
 		SCALE = 1;
@@ -668,7 +1744,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result2[1]";
+		SIGNAL = "mult_result_d[3]";
 		INDEX = 68;
 		FORMAT = E;
 		SCALE = 1;
@@ -676,7 +1752,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result2[0]";
+		SIGNAL = "mult_result_d[2]";
 		INDEX = 69;
 		FORMAT = E;
 		SCALE = 1;
@@ -684,15 +1760,15 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_OUT";
+		SIGNAL = "mult_result_d[1]";
 		INDEX = 70;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_OUT[15]";
+		SIGNAL = "mult_result_d[0]";
 		INDEX = 71;
 		FORMAT = E;
 		SCALE = 1;
@@ -700,15 +1776,15 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_OUT[14]";
+		SIGNAL = "C_d_2";
 		INDEX = 72;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_OUT[13]";
+		SIGNAL = "C_d_2[7]";
 		INDEX = 73;
 		FORMAT = E;
 		SCALE = 1;
@@ -716,7 +1792,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_OUT[12]";
+		SIGNAL = "C_d_2[6]";
 		INDEX = 74;
 		FORMAT = E;
 		SCALE = 1;
@@ -724,7 +1800,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_OUT[11]";
+		SIGNAL = "C_d_2[5]";
 		INDEX = 75;
 		FORMAT = E;
 		SCALE = 1;
@@ -732,7 +1808,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_OUT[10]";
+		SIGNAL = "C_d_2[4]";
 		INDEX = 76;
 		FORMAT = E;
 		SCALE = 1;
@@ -740,7 +1816,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_OUT[9]";
+		SIGNAL = "C_d_2[3]";
 		INDEX = 77;
 		FORMAT = E;
 		SCALE = 1;
@@ -748,7 +1824,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_OUT[8]";
+		SIGNAL = "C_d_2[2]";
 		INDEX = 78;
 		FORMAT = E;
 		SCALE = 1;
@@ -756,7 +1832,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_OUT[7]";
+		SIGNAL = "C_d_2[1]";
 		INDEX = 79;
 		FORMAT = E;
 		SCALE = 1;
@@ -764,7 +1840,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_OUT[6]";
+		SIGNAL = "C_d_2[0]";
 		INDEX = 80;
 		FORMAT = E;
 		SCALE = 1;
@@ -772,15 +1848,15 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_OUT[5]";
+		SIGNAL = "sum_result";
 		INDEX = 81;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_OUT[4]";
+		SIGNAL = "sum_result[15]";
 		INDEX = 82;
 		FORMAT = E;
 		SCALE = 1;
@@ -788,7 +1864,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_OUT[3]";
+		SIGNAL = "sum_result[14]";
 		INDEX = 83;
 		FORMAT = E;
 		SCALE = 1;
@@ -796,7 +1872,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_OUT[2]";
+		SIGNAL = "sum_result[13]";
 		INDEX = 84;
 		FORMAT = E;
 		SCALE = 1;
@@ -804,7 +1880,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_OUT[1]";
+		SIGNAL = "sum_result[12]";
 		INDEX = 85;
 		FORMAT = E;
 		SCALE = 1;
@@ -812,7 +1888,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_OUT[0]";
+		SIGNAL = "sum_result[11]";
 		INDEX = 86;
 		FORMAT = E;
 		SCALE = 1;
@@ -820,8 +1896,360 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "clk";
+		SIGNAL = "sum_result[10]";
 		INDEX = 87;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result[9]";
+		INDEX = 88;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result[8]";
+		INDEX = 89;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result[7]";
+		INDEX = 90;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result[6]";
+		INDEX = 91;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result[5]";
+		INDEX = 92;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result[4]";
+		INDEX = 93;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result[3]";
+		INDEX = 94;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result[2]";
+		INDEX = 95;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result[1]";
+		INDEX = 96;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result[0]";
+		INDEX = 97;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d";
+		INDEX = 98;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d[15]";
+		INDEX = 99;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d[14]";
+		INDEX = 100;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d[13]";
+		INDEX = 101;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d[12]";
+		INDEX = 102;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d[11]";
+		INDEX = 103;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d[10]";
+		INDEX = 104;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d[9]";
+		INDEX = 105;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d[8]";
+		INDEX = 106;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d[7]";
+		INDEX = 107;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d[6]";
+		INDEX = 108;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d[5]";
+		INDEX = 109;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d[4]";
+		INDEX = 110;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d[3]";
+		INDEX = 111;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d[2]";
+		INDEX = 112;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d[1]";
+		INDEX = 113;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d[0]";
+		INDEX = 114;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result";
+		INDEX = 115;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result[15]";
+		INDEX = 116;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result[14]";
+		INDEX = 117;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result[13]";
+		INDEX = 118;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result[12]";
+		INDEX = 119;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result[11]";
+		INDEX = 120;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result[10]";
+		INDEX = 121;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result[9]";
+		INDEX = 122;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result[8]";
+		INDEX = 123;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result[7]";
+		INDEX = 124;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result[6]";
+		INDEX = 125;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result[5]";
+		INDEX = 126;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result[4]";
+		INDEX = 127;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result[3]";
+		INDEX = 128;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result[2]";
+		INDEX = 129;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result[1]";
+		INDEX = 130;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result[0]";
+		INDEX = 131;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -829,13 +2257,13 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 	}
 }
 
-VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/Kopylov/db/exercise2.sim.cvwf")
+VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/Kopylov/db/Task2.sim.cvwf")
 {
 	ZOOM{
 		ZBEGIN = 0;
-		ZEND = 46100;
-		NUMERATOR = 20;
-		DENOMINATOR = 1000;
+		ZEND = 92200;
+		NUMERATOR = 934;
+		DENOMINATOR = 92200;
 		TOP_INDEX = 0;
 	}
 	CLOCK{
@@ -1063,15 +2491,15 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result1";
+		SIGNAL = "clk";
 		INDEX = 27;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result1[15]";
+		SIGNAL = "reset_n";
 		INDEX = 28;
 		FORMAT = E;
 		SCALE = 1;
@@ -1079,15 +2507,15 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result1[14]";
+		SIGNAL = "mult_result";
 		INDEX = 29;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result1[13]";
+		SIGNAL = "mult_result[15]";
 		INDEX = 30;
 		FORMAT = E;
 		SCALE = 1;
@@ -1095,7 +2523,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result1[12]";
+		SIGNAL = "mult_result[14]";
 		INDEX = 31;
 		FORMAT = E;
 		SCALE = 1;
@@ -1103,7 +2531,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result1[11]";
+		SIGNAL = "mult_result[13]";
 		INDEX = 32;
 		FORMAT = E;
 		SCALE = 1;
@@ -1111,7 +2539,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result1[10]";
+		SIGNAL = "mult_result[12]";
 		INDEX = 33;
 		FORMAT = E;
 		SCALE = 1;
@@ -1119,7 +2547,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result1[9]";
+		SIGNAL = "mult_result[11]";
 		INDEX = 34;
 		FORMAT = E;
 		SCALE = 1;
@@ -1127,7 +2555,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result1[8]";
+		SIGNAL = "mult_result[10]";
 		INDEX = 35;
 		FORMAT = E;
 		SCALE = 1;
@@ -1135,7 +2563,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result1[7]";
+		SIGNAL = "mult_result[9]";
 		INDEX = 36;
 		FORMAT = E;
 		SCALE = 1;
@@ -1143,7 +2571,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result1[6]";
+		SIGNAL = "mult_result[8]";
 		INDEX = 37;
 		FORMAT = E;
 		SCALE = 1;
@@ -1151,7 +2579,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result1[5]";
+		SIGNAL = "mult_result[7]";
 		INDEX = 38;
 		FORMAT = E;
 		SCALE = 1;
@@ -1159,7 +2587,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result1[4]";
+		SIGNAL = "mult_result[6]";
 		INDEX = 39;
 		FORMAT = E;
 		SCALE = 1;
@@ -1167,7 +2595,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result1[3]";
+		SIGNAL = "mult_result[5]";
 		INDEX = 40;
 		FORMAT = E;
 		SCALE = 1;
@@ -1175,7 +2603,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result1[2]";
+		SIGNAL = "mult_result[4]";
 		INDEX = 41;
 		FORMAT = E;
 		SCALE = 1;
@@ -1183,7 +2611,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result1[1]";
+		SIGNAL = "mult_result[3]";
 		INDEX = 42;
 		FORMAT = E;
 		SCALE = 1;
@@ -1191,7 +2619,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result1[0]";
+		SIGNAL = "mult_result[2]";
 		INDEX = 43;
 		FORMAT = E;
 		SCALE = 1;
@@ -1199,15 +2627,15 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "C_delayed";
+		SIGNAL = "mult_result[1]";
 		INDEX = 44;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "C_delayed[7]";
+		SIGNAL = "mult_result[0]";
 		INDEX = 45;
 		FORMAT = E;
 		SCALE = 1;
@@ -1215,15 +2643,15 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "C_delayed[6]";
+		SIGNAL = "C_d_1";
 		INDEX = 46;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "C_delayed[5]";
+		SIGNAL = "C_d_1[7]";
 		INDEX = 47;
 		FORMAT = E;
 		SCALE = 1;
@@ -1231,7 +2659,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "C_delayed[4]";
+		SIGNAL = "C_d_1[6]";
 		INDEX = 48;
 		FORMAT = E;
 		SCALE = 1;
@@ -1239,7 +2667,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "C_delayed[3]";
+		SIGNAL = "C_d_1[5]";
 		INDEX = 49;
 		FORMAT = E;
 		SCALE = 1;
@@ -1247,7 +2675,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "C_delayed[2]";
+		SIGNAL = "C_d_1[4]";
 		INDEX = 50;
 		FORMAT = E;
 		SCALE = 1;
@@ -1255,7 +2683,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "C_delayed[1]";
+		SIGNAL = "C_d_1[3]";
 		INDEX = 51;
 		FORMAT = E;
 		SCALE = 1;
@@ -1263,7 +2691,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "C_delayed[0]";
+		SIGNAL = "C_d_1[2]";
 		INDEX = 52;
 		FORMAT = E;
 		SCALE = 1;
@@ -1271,15 +2699,15 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result2";
+		SIGNAL = "C_d_1[1]";
 		INDEX = 53;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result2[15]";
+		SIGNAL = "C_d_1[0]";
 		INDEX = 54;
 		FORMAT = E;
 		SCALE = 1;
@@ -1287,15 +2715,15 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result2[14]";
+		SIGNAL = "mult_result_d";
 		INDEX = 55;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result2[13]";
+		SIGNAL = "mult_result_d[15]";
 		INDEX = 56;
 		FORMAT = E;
 		SCALE = 1;
@@ -1303,7 +2731,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result2[12]";
+		SIGNAL = "mult_result_d[14]";
 		INDEX = 57;
 		FORMAT = E;
 		SCALE = 1;
@@ -1311,7 +2739,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result2[11]";
+		SIGNAL = "mult_result_d[13]";
 		INDEX = 58;
 		FORMAT = E;
 		SCALE = 1;
@@ -1319,7 +2747,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result2[10]";
+		SIGNAL = "mult_result_d[12]";
 		INDEX = 59;
 		FORMAT = E;
 		SCALE = 1;
@@ -1327,7 +2755,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result2[9]";
+		SIGNAL = "mult_result_d[11]";
 		INDEX = 60;
 		FORMAT = E;
 		SCALE = 1;
@@ -1335,7 +2763,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result2[8]";
+		SIGNAL = "mult_result_d[10]";
 		INDEX = 61;
 		FORMAT = E;
 		SCALE = 1;
@@ -1343,7 +2771,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result2[7]";
+		SIGNAL = "mult_result_d[9]";
 		INDEX = 62;
 		FORMAT = E;
 		SCALE = 1;
@@ -1351,7 +2779,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result2[6]";
+		SIGNAL = "mult_result_d[8]";
 		INDEX = 63;
 		FORMAT = E;
 		SCALE = 1;
@@ -1359,7 +2787,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result2[5]";
+		SIGNAL = "mult_result_d[7]";
 		INDEX = 64;
 		FORMAT = E;
 		SCALE = 1;
@@ -1367,7 +2795,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result2[4]";
+		SIGNAL = "mult_result_d[6]";
 		INDEX = 65;
 		FORMAT = E;
 		SCALE = 1;
@@ -1375,7 +2803,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result2[3]";
+		SIGNAL = "mult_result_d[5]";
 		INDEX = 66;
 		FORMAT = E;
 		SCALE = 1;
@@ -1383,7 +2811,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result2[2]";
+		SIGNAL = "mult_result_d[4]";
 		INDEX = 67;
 		FORMAT = E;
 		SCALE = 1;
@@ -1391,7 +2819,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result2[1]";
+		SIGNAL = "mult_result_d[3]";
 		INDEX = 68;
 		FORMAT = E;
 		SCALE = 1;
@@ -1399,7 +2827,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result2[0]";
+		SIGNAL = "mult_result_d[2]";
 		INDEX = 69;
 		FORMAT = E;
 		SCALE = 1;
@@ -1407,15 +2835,15 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_OUT";
+		SIGNAL = "mult_result_d[1]";
 		INDEX = 70;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_OUT[15]";
+		SIGNAL = "mult_result_d[0]";
 		INDEX = 71;
 		FORMAT = E;
 		SCALE = 1;
@@ -1423,15 +2851,15 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_OUT[14]";
+		SIGNAL = "C_d_2";
 		INDEX = 72;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_OUT[13]";
+		SIGNAL = "C_d_2[7]";
 		INDEX = 73;
 		FORMAT = E;
 		SCALE = 1;
@@ -1439,7 +2867,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_OUT[12]";
+		SIGNAL = "C_d_2[6]";
 		INDEX = 74;
 		FORMAT = E;
 		SCALE = 1;
@@ -1447,7 +2875,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_OUT[11]";
+		SIGNAL = "C_d_2[5]";
 		INDEX = 75;
 		FORMAT = E;
 		SCALE = 1;
@@ -1455,7 +2883,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_OUT[10]";
+		SIGNAL = "C_d_2[4]";
 		INDEX = 76;
 		FORMAT = E;
 		SCALE = 1;
@@ -1463,7 +2891,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_OUT[9]";
+		SIGNAL = "C_d_2[3]";
 		INDEX = 77;
 		FORMAT = E;
 		SCALE = 1;
@@ -1471,7 +2899,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_OUT[8]";
+		SIGNAL = "C_d_2[2]";
 		INDEX = 78;
 		FORMAT = E;
 		SCALE = 1;
@@ -1479,7 +2907,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_OUT[7]";
+		SIGNAL = "C_d_2[1]";
 		INDEX = 79;
 		FORMAT = E;
 		SCALE = 1;
@@ -1487,7 +2915,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_OUT[6]";
+		SIGNAL = "C_d_2[0]";
 		INDEX = 80;
 		FORMAT = E;
 		SCALE = 1;
@@ -1495,15 +2923,15 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_OUT[5]";
+		SIGNAL = "sum_result";
 		INDEX = 81;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_OUT[4]";
+		SIGNAL = "sum_result[15]";
 		INDEX = 82;
 		FORMAT = E;
 		SCALE = 1;
@@ -1511,7 +2939,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_OUT[3]";
+		SIGNAL = "sum_result[14]";
 		INDEX = 83;
 		FORMAT = E;
 		SCALE = 1;
@@ -1519,7 +2947,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_OUT[2]";
+		SIGNAL = "sum_result[13]";
 		INDEX = 84;
 		FORMAT = E;
 		SCALE = 1;
@@ -1527,7 +2955,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_OUT[1]";
+		SIGNAL = "sum_result[12]";
 		INDEX = 85;
 		FORMAT = E;
 		SCALE = 1;
@@ -1535,7 +2963,7 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "DATA_OUT[0]";
+		SIGNAL = "sum_result[11]";
 		INDEX = 86;
 		FORMAT = E;
 		SCALE = 1;
@@ -1543,8 +2971,360 @@ VECTOR("C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/K
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "clk";
+		SIGNAL = "sum_result[10]";
 		INDEX = 87;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result[9]";
+		INDEX = 88;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result[8]";
+		INDEX = 89;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result[7]";
+		INDEX = 90;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result[6]";
+		INDEX = 91;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result[5]";
+		INDEX = 92;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result[4]";
+		INDEX = 93;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result[3]";
+		INDEX = 94;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result[2]";
+		INDEX = 95;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result[1]";
+		INDEX = 96;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result[0]";
+		INDEX = 97;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d";
+		INDEX = 98;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d[15]";
+		INDEX = 99;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d[14]";
+		INDEX = 100;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d[13]";
+		INDEX = 101;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d[12]";
+		INDEX = 102;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d[11]";
+		INDEX = 103;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d[10]";
+		INDEX = 104;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d[9]";
+		INDEX = 105;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d[8]";
+		INDEX = 106;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d[7]";
+		INDEX = 107;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d[6]";
+		INDEX = 108;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d[5]";
+		INDEX = 109;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d[4]";
+		INDEX = 110;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d[3]";
+		INDEX = 111;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d[2]";
+		INDEX = 112;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d[1]";
+		INDEX = 113;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "sum_result_d[0]";
+		INDEX = 114;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result";
+		INDEX = 115;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result[15]";
+		INDEX = 116;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result[14]";
+		INDEX = 117;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result[13]";
+		INDEX = 118;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result[12]";
+		INDEX = 119;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result[11]";
+		INDEX = 120;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result[10]";
+		INDEX = 121;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result[9]";
+		INDEX = 122;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result[8]";
+		INDEX = 123;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result[7]";
+		INDEX = 124;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result[6]";
+		INDEX = 125;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result[5]";
+		INDEX = 126;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result[4]";
+		INDEX = 127;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result[3]";
+		INDEX = 128;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result[2]";
+		INDEX = 129;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result[1]";
+		INDEX = 130;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "result[0]";
+		INDEX = 131;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;

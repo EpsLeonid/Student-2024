@@ -1,0 +1,476 @@
+Simulator report for Task2
+Mon Oct 14 17:30:44 2024
+Quartus II Version 9.1 Build 222 10/21/2009 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 263 nodes    ;
+; Simulation Coverage         ;      98.39 % ;
+; Total Number of Transitions ; 30391        ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
+; Device                      ; EP2S15F484C3 ;
++-----------------------------+--------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                        ;
++--------------------------------------------------------------------------------------------+--------------+---------------+
+; Option                                                                                     ; Setting      ; Default Value ;
++--------------------------------------------------------------------------------------------+--------------+---------------+
+; Simulation mode                                                                            ; Timing       ; Timing        ;
+; Start time                                                                                 ; 0 ns         ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF         ;               ;
+; Vector input source                                                                        ; Register.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On           ; On            ;
+; Check outputs                                                                              ; Off          ; Off           ;
+; Report simulation coverage                                                                 ; On           ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On           ; On            ;
+; Display missing 1-value coverage report                                                    ; On           ; On            ;
+; Display missing 0-value coverage report                                                    ; On           ; On            ;
+; Detect setup and hold time violations                                                      ; Off          ; Off           ;
+; Detect glitches                                                                            ; Off          ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off          ; Off           ;
+; Generate Signal Activity File                                                              ; Off          ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off          ; Off           ;
+; Group bus channels in simulation results                                                   ; Off          ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On           ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE   ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off          ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off          ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto         ; Auto          ;
++--------------------------------------------------------------------------------------------+--------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      98.39 % ;
+; Total nodes checked                                 ; 263          ;
+; Total output ports checked                          ; 310          ;
+; Total output ports with complete 1/0-value coverage ; 305          ;
+; Total output ports with no 1/0-value coverage       ; 3            ;
+; Total output ports with no 1-value coverage         ; 3            ;
+; Total output ports with no 0-value coverage         ; 5            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                          ;
++------------------------------------------------------------+----------------------------------------------------------------------+------------------+
+; Node Name                                                  ; Output Port Name                                                     ; Output Port Type ;
++------------------------------------------------------------+----------------------------------------------------------------------+------------------+
+; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1  ; |Register|mult_result[0]~reg0                                        ; dataout2         ;
+; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1  ; |Register|mult_result[1]~reg0                                        ; dataout3         ;
+; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1  ; |Register|mult_result[2]~reg0                                        ; dataout4         ;
+; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1  ; |Register|mult_result[3]~reg0                                        ; dataout5         ;
+; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1  ; |Register|mult_result[4]~reg0                                        ; dataout6         ;
+; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1  ; |Register|mult_result[5]~reg0                                        ; dataout7         ;
+; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1  ; |Register|mult_result[6]~reg0                                        ; dataout8         ;
+; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1  ; |Register|mult_result[7]~reg0                                        ; dataout9         ;
+; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1  ; |Register|mult_result[8]~reg0                                        ; dataout10        ;
+; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1  ; |Register|mult_result[9]~reg0                                        ; dataout11        ;
+; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1  ; |Register|mult_result[10]~reg0                                       ; dataout12        ;
+; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1  ; |Register|mult_result[11]~reg0                                       ; dataout13        ;
+; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1  ; |Register|mult_result[12]~reg0                                       ; dataout14        ;
+; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1  ; |Register|mult_result[13]~reg0                                       ; dataout15        ;
+; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1  ; |Register|mult_result[14]~reg0                                       ; dataout16        ;
+; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_out1  ; |Register|mult_result[15]~reg0                                       ; dataout17        ;
+; |Register|Add0~1                                           ; |Register|Add0~1                                                     ; sumout           ;
+; |Register|Add0~1                                           ; |Register|Add0~2                                                     ; cout             ;
+; |Register|Add0~5                                           ; |Register|Add0~5                                                     ; sumout           ;
+; |Register|Add0~5                                           ; |Register|Add0~6                                                     ; cout             ;
+; |Register|Add0~9                                           ; |Register|Add0~9                                                     ; sumout           ;
+; |Register|Add0~9                                           ; |Register|Add0~10                                                    ; cout             ;
+; |Register|Add0~13                                          ; |Register|Add0~13                                                    ; sumout           ;
+; |Register|Add0~13                                          ; |Register|Add0~14                                                    ; cout             ;
+; |Register|Add0~17                                          ; |Register|Add0~17                                                    ; sumout           ;
+; |Register|Add0~17                                          ; |Register|Add0~18                                                    ; cout             ;
+; |Register|Add0~21                                          ; |Register|Add0~21                                                    ; sumout           ;
+; |Register|Add0~21                                          ; |Register|Add0~22                                                    ; cout             ;
+; |Register|Add0~25                                          ; |Register|Add0~25                                                    ; sumout           ;
+; |Register|Add0~25                                          ; |Register|Add0~26                                                    ; cout             ;
+; |Register|Add0~29                                          ; |Register|Add0~29                                                    ; sumout           ;
+; |Register|Add0~29                                          ; |Register|Add0~30                                                    ; cout             ;
+; |Register|Add0~33                                          ; |Register|Add0~33                                                    ; sumout           ;
+; |Register|Add0~33                                          ; |Register|Add0~34                                                    ; cout             ;
+; |Register|Add0~37                                          ; |Register|Add0~37                                                    ; sumout           ;
+; |Register|Add0~37                                          ; |Register|Add0~38                                                    ; cout             ;
+; |Register|Add0~41                                          ; |Register|Add0~41                                                    ; sumout           ;
+; |Register|Add0~41                                          ; |Register|Add0~42                                                    ; cout             ;
+; |Register|Add0~45                                          ; |Register|Add0~45                                                    ; sumout           ;
+; |Register|Add0~45                                          ; |Register|Add0~46                                                    ; cout             ;
+; |Register|Add0~49                                          ; |Register|Add0~49                                                    ; sumout           ;
+; |Register|Add0~49                                          ; |Register|Add0~50                                                    ; cout             ;
+; |Register|Add0~53                                          ; |Register|Add0~53                                                    ; sumout           ;
+; |Register|Add0~53                                          ; |Register|Add0~54                                                    ; cout             ;
+; |Register|Add0~57                                          ; |Register|Add0~57                                                    ; sumout           ;
+; |Register|Add0~61                                          ; |Register|Add0~61                                                    ; sumout           ;
+; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2 ; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2           ; dataout2         ;
+; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2 ; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2~DATAOUT1  ; dataout3         ;
+; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2 ; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2~DATAOUT2  ; dataout4         ;
+; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2 ; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2~DATAOUT3  ; dataout5         ;
+; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2 ; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2~DATAOUT4  ; dataout6         ;
+; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2 ; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2~DATAOUT5  ; dataout7         ;
+; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2 ; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2~DATAOUT6  ; dataout8         ;
+; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2 ; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2~DATAOUT7  ; dataout9         ;
+; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2 ; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2~DATAOUT8  ; dataout10        ;
+; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2 ; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2~DATAOUT9  ; dataout11        ;
+; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2 ; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2~DATAOUT10 ; dataout12        ;
+; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2 ; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2~DATAOUT11 ; dataout13        ;
+; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2 ; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2~DATAOUT12 ; dataout14        ;
+; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2 ; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2~DATAOUT13 ; dataout15        ;
+; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2 ; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2~DATAOUT14 ; dataout16        ;
+; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2 ; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2~DATAOUT15 ; dataout17        ;
+; |Register|mult_result_d[0]~reg0                            ; |Register|mult_result_d[0]~reg0                                      ; regout           ;
+; |Register|mult_result_d[1]~reg0                            ; |Register|mult_result_d[1]~reg0                                      ; regout           ;
+; |Register|mult_result_d[2]~reg0                            ; |Register|mult_result_d[2]~reg0                                      ; regout           ;
+; |Register|mult_result_d[3]~reg0                            ; |Register|mult_result_d[3]~reg0                                      ; regout           ;
+; |Register|mult_result_d[4]~reg0                            ; |Register|mult_result_d[4]~reg0                                      ; regout           ;
+; |Register|mult_result_d[5]~reg0                            ; |Register|mult_result_d[5]~reg0                                      ; regout           ;
+; |Register|mult_result_d[6]~reg0                            ; |Register|mult_result_d[6]~reg0                                      ; regout           ;
+; |Register|mult_result_d[7]~reg0                            ; |Register|mult_result_d[7]~reg0                                      ; regout           ;
+; |Register|mult_result_d[8]~reg0                            ; |Register|mult_result_d[8]~reg0                                      ; regout           ;
+; |Register|mult_result_d[9]~reg0                            ; |Register|mult_result_d[9]~reg0                                      ; regout           ;
+; |Register|mult_result_d[10]~reg0                           ; |Register|mult_result_d[10]~reg0                                     ; regout           ;
+; |Register|mult_result_d[11]~reg0                           ; |Register|mult_result_d[11]~reg0                                     ; regout           ;
+; |Register|mult_result_d[12]~reg0                           ; |Register|mult_result_d[12]~reg0                                     ; regout           ;
+; |Register|mult_result_d[13]~reg0                           ; |Register|mult_result_d[13]~reg0                                     ; regout           ;
+; |Register|mult_result_d[14]~reg0                           ; |Register|mult_result_d[14]~reg0                                     ; regout           ;
+; |Register|mult_result_d[15]~reg0                           ; |Register|mult_result_d[15]~reg0                                     ; regout           ;
+; |Register|C_d_1[0]~reg0                                    ; |Register|C_d_1[0]~reg0                                              ; regout           ;
+; |Register|C_d_1[1]~reg0                                    ; |Register|C_d_1[1]~reg0                                              ; regout           ;
+; |Register|C_d_1[2]~reg0                                    ; |Register|C_d_1[2]~reg0                                              ; regout           ;
+; |Register|C_d_1[3]~reg0                                    ; |Register|C_d_1[3]~reg0                                              ; regout           ;
+; |Register|C_d_1[4]~reg0                                    ; |Register|C_d_1[4]~reg0                                              ; regout           ;
+; |Register|C_d_1[5]~reg0                                    ; |Register|C_d_1[5]~reg0                                              ; regout           ;
+; |Register|C_d_1[6]~reg0                                    ; |Register|C_d_1[6]~reg0                                              ; regout           ;
+; |Register|C_d_1[7]~reg0                                    ; |Register|C_d_1[7]~reg0                                              ; regout           ;
+; |Register|C_d_2[0]~reg0                                    ; |Register|C_d_2[0]~reg0                                              ; regout           ;
+; |Register|C_d_2[1]~reg0                                    ; |Register|C_d_2[1]~reg0                                              ; regout           ;
+; |Register|C_d_2[2]~reg0                                    ; |Register|C_d_2[2]~reg0                                              ; regout           ;
+; |Register|C_d_2[3]~reg0                                    ; |Register|C_d_2[3]~reg0                                              ; regout           ;
+; |Register|C_d_2[4]~reg0                                    ; |Register|C_d_2[4]~reg0                                              ; regout           ;
+; |Register|C_d_2[5]~reg0                                    ; |Register|C_d_2[5]~reg0                                              ; regout           ;
+; |Register|C_d_2[6]~reg0                                    ; |Register|C_d_2[6]~reg0                                              ; regout           ;
+; |Register|C_d_2[7]~reg0                                    ; |Register|C_d_2[7]~reg0                                              ; regout           ;
+; |Register|sum_result[0]~reg0                               ; |Register|sum_result[0]~reg0                                         ; regout           ;
+; |Register|sum_result[1]~reg0                               ; |Register|sum_result[1]~reg0                                         ; regout           ;
+; |Register|sum_result[2]~reg0                               ; |Register|sum_result[2]~reg0                                         ; regout           ;
+; |Register|sum_result[3]~reg0                               ; |Register|sum_result[3]~reg0                                         ; regout           ;
+; |Register|sum_result[4]~reg0                               ; |Register|sum_result[4]~reg0                                         ; regout           ;
+; |Register|sum_result[5]~reg0                               ; |Register|sum_result[5]~reg0                                         ; regout           ;
+; |Register|sum_result[6]~reg0                               ; |Register|sum_result[6]~reg0                                         ; regout           ;
+; |Register|sum_result[7]~reg0                               ; |Register|sum_result[7]~reg0                                         ; regout           ;
+; |Register|sum_result[8]~reg0                               ; |Register|sum_result[8]~reg0                                         ; regout           ;
+; |Register|sum_result[9]~reg0                               ; |Register|sum_result[9]~reg0                                         ; regout           ;
+; |Register|sum_result[10]~reg0                              ; |Register|sum_result[10]~reg0                                        ; regout           ;
+; |Register|sum_result[11]~reg0                              ; |Register|sum_result[11]~reg0                                        ; regout           ;
+; |Register|sum_result[12]~reg0                              ; |Register|sum_result[12]~reg0                                        ; regout           ;
+; |Register|sum_result[13]~reg0                              ; |Register|sum_result[13]~reg0                                        ; regout           ;
+; |Register|sum_result[14]~reg0                              ; |Register|sum_result[14]~reg0                                        ; regout           ;
+; |Register|sum_result[15]~reg0                              ; |Register|sum_result[15]~reg0                                        ; regout           ;
+; |Register|sum_result_d[0]~reg0                             ; |Register|sum_result_d[0]~reg0                                       ; regout           ;
+; |Register|sum_result_d[1]~reg0                             ; |Register|sum_result_d[1]~reg0                                       ; regout           ;
+; |Register|sum_result_d[2]~reg0                             ; |Register|sum_result_d[2]~reg0                                       ; regout           ;
+; |Register|sum_result_d[3]~reg0                             ; |Register|sum_result_d[3]~reg0                                       ; regout           ;
+; |Register|sum_result_d[4]~reg0                             ; |Register|sum_result_d[4]~reg0                                       ; regout           ;
+; |Register|sum_result_d[5]~reg0                             ; |Register|sum_result_d[5]~reg0                                       ; regout           ;
+; |Register|sum_result_d[6]~reg0                             ; |Register|sum_result_d[6]~reg0                                       ; regout           ;
+; |Register|sum_result_d[7]~reg0                             ; |Register|sum_result_d[7]~reg0                                       ; regout           ;
+; |Register|sum_result_d[8]~reg0                             ; |Register|sum_result_d[8]~reg0                                       ; regout           ;
+; |Register|sum_result_d[9]~reg0                             ; |Register|sum_result_d[9]~reg0                                       ; regout           ;
+; |Register|sum_result_d[10]~reg0                            ; |Register|sum_result_d[10]~reg0                                      ; regout           ;
+; |Register|sum_result_d[11]~reg0                            ; |Register|sum_result_d[11]~reg0                                      ; regout           ;
+; |Register|sum_result_d[12]~reg0                            ; |Register|sum_result_d[12]~reg0                                      ; regout           ;
+; |Register|sum_result_d[13]~reg0                            ; |Register|sum_result_d[13]~reg0                                      ; regout           ;
+; |Register|sum_result_d[14]~reg0                            ; |Register|sum_result_d[14]~reg0                                      ; regout           ;
+; |Register|sum_result_d[15]~reg0                            ; |Register|sum_result_d[15]~reg0                                      ; regout           ;
+; |Register|result[0]~reg0                                   ; |Register|result[0]~reg0                                             ; regout           ;
+; |Register|result[1]~reg0                                   ; |Register|result[1]~reg0                                             ; regout           ;
+; |Register|result[2]~reg0                                   ; |Register|result[2]~reg0                                             ; regout           ;
+; |Register|result[3]~reg0                                   ; |Register|result[3]~reg0                                             ; regout           ;
+; |Register|result[4]~reg0                                   ; |Register|result[4]~reg0                                             ; regout           ;
+; |Register|result[5]~reg0                                   ; |Register|result[5]~reg0                                             ; regout           ;
+; |Register|result[6]~reg0                                   ; |Register|result[6]~reg0                                             ; regout           ;
+; |Register|result[7]~reg0                                   ; |Register|result[7]~reg0                                             ; regout           ;
+; |Register|result[8]~reg0                                   ; |Register|result[8]~reg0                                             ; regout           ;
+; |Register|result[9]~reg0                                   ; |Register|result[9]~reg0                                             ; regout           ;
+; |Register|result[10]~reg0                                  ; |Register|result[10]~reg0                                            ; regout           ;
+; |Register|result[11]~reg0                                  ; |Register|result[11]~reg0                                            ; regout           ;
+; |Register|result[12]~reg0                                  ; |Register|result[12]~reg0                                            ; regout           ;
+; |Register|result[13]~reg0                                  ; |Register|result[13]~reg0                                            ; regout           ;
+; |Register|result[14]~reg0                                  ; |Register|result[14]~reg0                                            ; regout           ;
+; |Register|result[15]~reg0                                  ; |Register|result[15]~reg0                                            ; regout           ;
+; |Register|mult_result[0]                                   ; |Register|mult_result[0]                                             ; padio            ;
+; |Register|mult_result[1]                                   ; |Register|mult_result[1]                                             ; padio            ;
+; |Register|mult_result[2]                                   ; |Register|mult_result[2]                                             ; padio            ;
+; |Register|mult_result[3]                                   ; |Register|mult_result[3]                                             ; padio            ;
+; |Register|mult_result[4]                                   ; |Register|mult_result[4]                                             ; padio            ;
+; |Register|mult_result[5]                                   ; |Register|mult_result[5]                                             ; padio            ;
+; |Register|mult_result[6]                                   ; |Register|mult_result[6]                                             ; padio            ;
+; |Register|mult_result[7]                                   ; |Register|mult_result[7]                                             ; padio            ;
+; |Register|mult_result[8]                                   ; |Register|mult_result[8]                                             ; padio            ;
+; |Register|mult_result[9]                                   ; |Register|mult_result[9]                                             ; padio            ;
+; |Register|mult_result[10]                                  ; |Register|mult_result[10]                                            ; padio            ;
+; |Register|mult_result[11]                                  ; |Register|mult_result[11]                                            ; padio            ;
+; |Register|mult_result[12]                                  ; |Register|mult_result[12]                                            ; padio            ;
+; |Register|mult_result[13]                                  ; |Register|mult_result[13]                                            ; padio            ;
+; |Register|mult_result[14]                                  ; |Register|mult_result[14]                                            ; padio            ;
+; |Register|mult_result[15]                                  ; |Register|mult_result[15]                                            ; padio            ;
+; |Register|mult_result_d[0]                                 ; |Register|mult_result_d[0]                                           ; padio            ;
+; |Register|mult_result_d[1]                                 ; |Register|mult_result_d[1]                                           ; padio            ;
+; |Register|mult_result_d[2]                                 ; |Register|mult_result_d[2]                                           ; padio            ;
+; |Register|mult_result_d[3]                                 ; |Register|mult_result_d[3]                                           ; padio            ;
+; |Register|mult_result_d[4]                                 ; |Register|mult_result_d[4]                                           ; padio            ;
+; |Register|mult_result_d[5]                                 ; |Register|mult_result_d[5]                                           ; padio            ;
+; |Register|mult_result_d[6]                                 ; |Register|mult_result_d[6]                                           ; padio            ;
+; |Register|mult_result_d[7]                                 ; |Register|mult_result_d[7]                                           ; padio            ;
+; |Register|mult_result_d[8]                                 ; |Register|mult_result_d[8]                                           ; padio            ;
+; |Register|mult_result_d[9]                                 ; |Register|mult_result_d[9]                                           ; padio            ;
+; |Register|mult_result_d[10]                                ; |Register|mult_result_d[10]                                          ; padio            ;
+; |Register|mult_result_d[11]                                ; |Register|mult_result_d[11]                                          ; padio            ;
+; |Register|mult_result_d[12]                                ; |Register|mult_result_d[12]                                          ; padio            ;
+; |Register|mult_result_d[13]                                ; |Register|mult_result_d[13]                                          ; padio            ;
+; |Register|mult_result_d[14]                                ; |Register|mult_result_d[14]                                          ; padio            ;
+; |Register|mult_result_d[15]                                ; |Register|mult_result_d[15]                                          ; padio            ;
+; |Register|C_d_1[0]                                         ; |Register|C_d_1[0]                                                   ; padio            ;
+; |Register|C_d_1[1]                                         ; |Register|C_d_1[1]                                                   ; padio            ;
+; |Register|C_d_1[2]                                         ; |Register|C_d_1[2]                                                   ; padio            ;
+; |Register|C_d_1[3]                                         ; |Register|C_d_1[3]                                                   ; padio            ;
+; |Register|C_d_1[4]                                         ; |Register|C_d_1[4]                                                   ; padio            ;
+; |Register|C_d_1[5]                                         ; |Register|C_d_1[5]                                                   ; padio            ;
+; |Register|C_d_1[6]                                         ; |Register|C_d_1[6]                                                   ; padio            ;
+; |Register|C_d_1[7]                                         ; |Register|C_d_1[7]                                                   ; padio            ;
+; |Register|C_d_2[0]                                         ; |Register|C_d_2[0]                                                   ; padio            ;
+; |Register|C_d_2[1]                                         ; |Register|C_d_2[1]                                                   ; padio            ;
+; |Register|C_d_2[2]                                         ; |Register|C_d_2[2]                                                   ; padio            ;
+; |Register|C_d_2[3]                                         ; |Register|C_d_2[3]                                                   ; padio            ;
+; |Register|C_d_2[4]                                         ; |Register|C_d_2[4]                                                   ; padio            ;
+; |Register|C_d_2[5]                                         ; |Register|C_d_2[5]                                                   ; padio            ;
+; |Register|C_d_2[6]                                         ; |Register|C_d_2[6]                                                   ; padio            ;
+; |Register|C_d_2[7]                                         ; |Register|C_d_2[7]                                                   ; padio            ;
+; |Register|sum_result[0]                                    ; |Register|sum_result[0]                                              ; padio            ;
+; |Register|sum_result[1]                                    ; |Register|sum_result[1]                                              ; padio            ;
+; |Register|sum_result[2]                                    ; |Register|sum_result[2]                                              ; padio            ;
+; |Register|sum_result[3]                                    ; |Register|sum_result[3]                                              ; padio            ;
+; |Register|sum_result[4]                                    ; |Register|sum_result[4]                                              ; padio            ;
+; |Register|sum_result[5]                                    ; |Register|sum_result[5]                                              ; padio            ;
+; |Register|sum_result[6]                                    ; |Register|sum_result[6]                                              ; padio            ;
+; |Register|sum_result[7]                                    ; |Register|sum_result[7]                                              ; padio            ;
+; |Register|sum_result[8]                                    ; |Register|sum_result[8]                                              ; padio            ;
+; |Register|sum_result[9]                                    ; |Register|sum_result[9]                                              ; padio            ;
+; |Register|sum_result[10]                                   ; |Register|sum_result[10]                                             ; padio            ;
+; |Register|sum_result[11]                                   ; |Register|sum_result[11]                                             ; padio            ;
+; |Register|sum_result[12]                                   ; |Register|sum_result[12]                                             ; padio            ;
+; |Register|sum_result[13]                                   ; |Register|sum_result[13]                                             ; padio            ;
+; |Register|sum_result[14]                                   ; |Register|sum_result[14]                                             ; padio            ;
+; |Register|sum_result[15]                                   ; |Register|sum_result[15]                                             ; padio            ;
+; |Register|sum_result_d[0]                                  ; |Register|sum_result_d[0]                                            ; padio            ;
+; |Register|sum_result_d[1]                                  ; |Register|sum_result_d[1]                                            ; padio            ;
+; |Register|sum_result_d[2]                                  ; |Register|sum_result_d[2]                                            ; padio            ;
+; |Register|sum_result_d[3]                                  ; |Register|sum_result_d[3]                                            ; padio            ;
+; |Register|sum_result_d[4]                                  ; |Register|sum_result_d[4]                                            ; padio            ;
+; |Register|sum_result_d[5]                                  ; |Register|sum_result_d[5]                                            ; padio            ;
+; |Register|sum_result_d[6]                                  ; |Register|sum_result_d[6]                                            ; padio            ;
+; |Register|sum_result_d[7]                                  ; |Register|sum_result_d[7]                                            ; padio            ;
+; |Register|sum_result_d[8]                                  ; |Register|sum_result_d[8]                                            ; padio            ;
+; |Register|sum_result_d[9]                                  ; |Register|sum_result_d[9]                                            ; padio            ;
+; |Register|sum_result_d[10]                                 ; |Register|sum_result_d[10]                                           ; padio            ;
+; |Register|sum_result_d[11]                                 ; |Register|sum_result_d[11]                                           ; padio            ;
+; |Register|sum_result_d[12]                                 ; |Register|sum_result_d[12]                                           ; padio            ;
+; |Register|sum_result_d[13]                                 ; |Register|sum_result_d[13]                                           ; padio            ;
+; |Register|sum_result_d[14]                                 ; |Register|sum_result_d[14]                                           ; padio            ;
+; |Register|sum_result_d[15]                                 ; |Register|sum_result_d[15]                                           ; padio            ;
+; |Register|result[0]                                        ; |Register|result[0]                                                  ; padio            ;
+; |Register|result[1]                                        ; |Register|result[1]                                                  ; padio            ;
+; |Register|result[2]                                        ; |Register|result[2]                                                  ; padio            ;
+; |Register|result[3]                                        ; |Register|result[3]                                                  ; padio            ;
+; |Register|result[4]                                        ; |Register|result[4]                                                  ; padio            ;
+; |Register|result[5]                                        ; |Register|result[5]                                                  ; padio            ;
+; |Register|result[6]                                        ; |Register|result[6]                                                  ; padio            ;
+; |Register|result[7]                                        ; |Register|result[7]                                                  ; padio            ;
+; |Register|result[8]                                        ; |Register|result[8]                                                  ; padio            ;
+; |Register|result[9]                                        ; |Register|result[9]                                                  ; padio            ;
+; |Register|result[10]                                       ; |Register|result[10]                                                 ; padio            ;
+; |Register|result[11]                                       ; |Register|result[11]                                                 ; padio            ;
+; |Register|result[12]                                       ; |Register|result[12]                                                 ; padio            ;
+; |Register|result[13]                                       ; |Register|result[13]                                                 ; padio            ;
+; |Register|result[14]                                       ; |Register|result[14]                                                 ; padio            ;
+; |Register|result[15]                                       ; |Register|result[15]                                                 ; padio            ;
+; |Register|clk                                              ; |Register|clk~corein                                                 ; combout          ;
+; |Register|C[0]                                             ; |Register|C[0]~corein                                                ; combout          ;
+; |Register|C[1]                                             ; |Register|C[1]~corein                                                ; combout          ;
+; |Register|C[2]                                             ; |Register|C[2]~corein                                                ; combout          ;
+; |Register|C[3]                                             ; |Register|C[3]~corein                                                ; combout          ;
+; |Register|C[4]                                             ; |Register|C[4]~corein                                                ; combout          ;
+; |Register|C[5]                                             ; |Register|C[5]~corein                                                ; combout          ;
+; |Register|C[6]                                             ; |Register|C[6]~corein                                                ; combout          ;
+; |Register|C[7]                                             ; |Register|C[7]~corein                                                ; combout          ;
+; |Register|A[0]                                             ; |Register|A[0]~corein                                                ; combout          ;
+; |Register|A[1]                                             ; |Register|A[1]~corein                                                ; combout          ;
+; |Register|A[2]                                             ; |Register|A[2]~corein                                                ; combout          ;
+; |Register|A[3]                                             ; |Register|A[3]~corein                                                ; combout          ;
+; |Register|A[4]                                             ; |Register|A[4]~corein                                                ; combout          ;
+; |Register|A[5]                                             ; |Register|A[5]~corein                                                ; combout          ;
+; |Register|A[6]                                             ; |Register|A[6]~corein                                                ; combout          ;
+; |Register|A[7]                                             ; |Register|A[7]~corein                                                ; combout          ;
+; |Register|B[0]                                             ; |Register|B[0]~corein                                                ; combout          ;
+; |Register|B[1]                                             ; |Register|B[1]~corein                                                ; combout          ;
+; |Register|B[2]                                             ; |Register|B[2]~corein                                                ; combout          ;
+; |Register|B[3]                                             ; |Register|B[3]~corein                                                ; combout          ;
+; |Register|B[4]                                             ; |Register|B[4]~corein                                                ; combout          ;
+; |Register|B[5]                                             ; |Register|B[5]~corein                                                ; combout          ;
+; |Register|B[6]                                             ; |Register|B[6]~corein                                                ; combout          ;
+; |Register|B[7]                                             ; |Register|B[7]~corein                                                ; combout          ;
+; |Register|clk~clkctrl                                      ; |Register|clk~clkctrl                                                ; outclk           ;
+; |Register|mult_result_d[0]~reg0feeder                      ; |Register|mult_result_d[0]~reg0feeder                                ; combout          ;
+; |Register|mult_result_d[3]~reg0feeder                      ; |Register|mult_result_d[3]~reg0feeder                                ; combout          ;
+; |Register|mult_result_d[6]~reg0feeder                      ; |Register|mult_result_d[6]~reg0feeder                                ; combout          ;
+; |Register|mult_result_d[7]~reg0feeder                      ; |Register|mult_result_d[7]~reg0feeder                                ; combout          ;
+; |Register|mult_result_d[8]~reg0feeder                      ; |Register|mult_result_d[8]~reg0feeder                                ; combout          ;
+; |Register|mult_result_d[9]~reg0feeder                      ; |Register|mult_result_d[9]~reg0feeder                                ; combout          ;
+; |Register|mult_result_d[13]~reg0feeder                     ; |Register|mult_result_d[13]~reg0feeder                               ; combout          ;
+; |Register|mult_result_d[15]~reg0feeder                     ; |Register|mult_result_d[15]~reg0feeder                               ; combout          ;
+; |Register|C_d_2[1]~reg0feeder                              ; |Register|C_d_2[1]~reg0feeder                                        ; combout          ;
+; |Register|C_d_2[3]~reg0feeder                              ; |Register|C_d_2[3]~reg0feeder                                        ; combout          ;
+; |Register|C_d_2[4]~reg0feeder                              ; |Register|C_d_2[4]~reg0feeder                                        ; combout          ;
+; |Register|C_d_2[5]~reg0feeder                              ; |Register|C_d_2[5]~reg0feeder                                        ; combout          ;
+; |Register|C_d_2[6]~reg0feeder                              ; |Register|C_d_2[6]~reg0feeder                                        ; combout          ;
+; |Register|C_d_2[7]~reg0feeder                              ; |Register|C_d_2[7]~reg0feeder                                        ; combout          ;
+; |Register|sum_result_d[1]~reg0feeder                       ; |Register|sum_result_d[1]~reg0feeder                                 ; combout          ;
+; |Register|sum_result_d[3]~reg0feeder                       ; |Register|sum_result_d[3]~reg0feeder                                 ; combout          ;
+; |Register|sum_result_d[5]~reg0feeder                       ; |Register|sum_result_d[5]~reg0feeder                                 ; combout          ;
+; |Register|sum_result_d[7]~reg0feeder                       ; |Register|sum_result_d[7]~reg0feeder                                 ; combout          ;
+; |Register|sum_result_d[8]~reg0feeder                       ; |Register|sum_result_d[8]~reg0feeder                                 ; combout          ;
+; |Register|sum_result_d[9]~reg0feeder                       ; |Register|sum_result_d[9]~reg0feeder                                 ; combout          ;
+; |Register|sum_result_d[11]~reg0feeder                      ; |Register|sum_result_d[11]~reg0feeder                                ; combout          ;
+; |Register|sum_result_d[13]~reg0feeder                      ; |Register|sum_result_d[13]~reg0feeder                                ; combout          ;
+; |Register|sum_result_d[14]~reg0feeder                      ; |Register|sum_result_d[14]~reg0feeder                                ; combout          ;
+; |Register|sum_result_d[15]~reg0feeder                      ; |Register|sum_result_d[15]~reg0feeder                                ; combout          ;
+; |Register|result[0]~reg0feeder                             ; |Register|result[0]~reg0feeder                                       ; combout          ;
+; |Register|result[2]~reg0feeder                             ; |Register|result[2]~reg0feeder                                       ; combout          ;
+; |Register|result[3]~reg0feeder                             ; |Register|result[3]~reg0feeder                                       ; combout          ;
+; |Register|result[4]~reg0feeder                             ; |Register|result[4]~reg0feeder                                       ; combout          ;
+; |Register|result[5]~reg0feeder                             ; |Register|result[5]~reg0feeder                                       ; combout          ;
+; |Register|result[6]~reg0feeder                             ; |Register|result[6]~reg0feeder                                       ; combout          ;
+; |Register|result[8]~reg0feeder                             ; |Register|result[8]~reg0feeder                                       ; combout          ;
+; |Register|result[9]~reg0feeder                             ; |Register|result[9]~reg0feeder                                       ; combout          ;
+; |Register|result[10]~reg0feeder                            ; |Register|result[10]~reg0feeder                                      ; combout          ;
+; |Register|result[11]~reg0feeder                            ; |Register|result[11]~reg0feeder                                      ; combout          ;
+; |Register|result[12]~reg0feeder                            ; |Register|result[12]~reg0feeder                                      ; combout          ;
+; |Register|result[15]~reg0feeder                            ; |Register|result[15]~reg0feeder                                      ; combout          ;
+; |Register|C_d_1[0]~reg0feeder                              ; |Register|C_d_1[0]~reg0feeder                                        ; combout          ;
+; |Register|C_d_1[1]~reg0feeder                              ; |Register|C_d_1[1]~reg0feeder                                        ; combout          ;
+; |Register|C_d_1[2]~reg0feeder                              ; |Register|C_d_1[2]~reg0feeder                                        ; combout          ;
+; |Register|C_d_1[3]~reg0feeder                              ; |Register|C_d_1[3]~reg0feeder                                        ; combout          ;
+; |Register|C_d_1[6]~reg0feeder                              ; |Register|C_d_1[6]~reg0feeder                                        ; combout          ;
++------------------------------------------------------------+----------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                     ;
++------------------------------------------------------------+--------------------------------------------------------------+------------------+
+; Node Name                                                  ; Output Port Name                                             ; Output Port Type ;
++------------------------------------------------------------+--------------------------------------------------------------+------------------+
+; |Register|Add0~57                                          ; |Register|Add0~58                                            ; cout             ;
+; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2 ; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2~2 ; dataout0         ;
+; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2 ; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2~3 ; dataout1         ;
++------------------------------------------------------------+--------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                     ;
++------------------------------------------------------------+--------------------------------------------------------------+------------------+
+; Node Name                                                  ; Output Port Name                                             ; Output Port Type ;
++------------------------------------------------------------+--------------------------------------------------------------+------------------+
+; |Register|Add0~57                                          ; |Register|Add0~58                                            ; cout             ;
+; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2 ; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2~2 ; dataout0         ;
+; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2 ; |Register|lpm_mult:Mult0|mult_q6t:auto_generated|mac_mult2~3 ; dataout1         ;
+; |Register|reset_n                                          ; |Register|reset_n~corein                                     ; combout          ;
+; |Register|reset_n~clkctrl                                  ; |Register|reset_n~clkctrl                                    ; outclk           ;
++------------------------------------------------------------+--------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 222 10/21/2009 SJ Full Version
+    Info: Processing started: Mon Oct 14 17:30:44 2024
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off Task2 -c Task2
+Info: Using vector source file "C:/Users/Alieksandr/Documents/GitHub/Student-2024/Quartus II/zadanie_2/Kopylov/Register.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      98.39 %
+Info: Number of transitions in simulation is 30391
+Info: Thank you for using the Quartus II software 30-day evaluation. You have 8 days left (until Oct 22, 2024) before compilation and simulation support is disabled.
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 168 megabytes
+    Info: Processing ended: Mon Oct 14 17:30:44 2024
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+
