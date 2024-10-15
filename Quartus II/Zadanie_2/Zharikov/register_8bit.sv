@@ -8,12 +8,14 @@ module register_8bit (
 
 // Register to store the previous value of input C
 reg [7:0] C_reg;           // Register for C
+reg [7:0] Mult_reg;           // Register for 
 
 // Always block to update the registers and compute the output
 always_ff @(posedge clk) begin
-    C_reg <= C;              // Store value of C
+    C_reg <= C;
+    Mult_reg <= A * B;               // Store value of C
     // Calculate the result using inputs A, B, and the stored C value
-    DATA_OUT <= A * B + C_reg;
+    DATA_OUT <= Mult_reg + C_reg;
 end
 
 endmodule

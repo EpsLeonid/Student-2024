@@ -1,0 +1,13 @@
+db
+incremental_db
+simulation
+*.rpt
+*.summary
+*.qws
+*.pin
+*.bak
+*.mti
+*.mpf
+*.png
+*.done
+*.smsg
