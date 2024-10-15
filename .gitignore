@@ -1,9 +1,13 @@
-<<<<<<< HEAD
-/Quartus II/Zadanie_2/Armiya/*.mti
-/Quartus II/Zadanie_2/Armiya/*.mpf
-/Quartus II/Zadanie_2/Armiya/*.bak
-=======
-
-~$дание_final.docx
-~$дание_final.docx
->>>>>>> 045b577213d78af068c859bc3b49f2c3aa07e6c3
+db
+incremental_db
+simulation
+*.rpt
+*.summary
+*.qws
+*.pin
+*.bak
+*.mti
+*.mpf
+*.png
+*.done
+*.smsg
