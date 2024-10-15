@@ -1,0 +1,15 @@
+Analysis & Synthesis Status : Successful - Mon Oct 14 17:30:27 2024
+Quartus II Version : 9.1 Build 222 10/21/2009 SJ Full Version
+Revision Name : Task2
+Top-level Entity Name : Register
+Family : Stratix II
+Logic utilization : N/A
+    Combinational ALUTs : 16
+    Dedicated logic registers : 96
+Total registers : 96
+Total pins : 122
+Total virtual pins : 0
+Total block memory bits : 0
+DSP block 9-bit elements : 1
+Total PLLs : 0
+Total DLLs : 0
