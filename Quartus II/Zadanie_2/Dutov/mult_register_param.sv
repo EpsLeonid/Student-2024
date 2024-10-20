@@ -5,13 +5,34 @@ module mult_register_param (
     input logic [WIDTH-1:0] A,
     input logic [WIDTH-1:0] B,
     input logic [WIDTH-1:0] C,
+    output logic [OUT_WIDTH-1:0] C_reg,  		
+    output logic [OUT_WIDTH-1:0] C_delayed,            
+    output logic [OUT_WIDTH-1:0] AxB_result,      
     output logic [OUT_WIDTH-1:0] DATA_OUT
 );
 
-    logic [OUT_WIDTH-1:0] product;
+     always_ff @(posedge clk) begin
+    
+        C_reg <= C;
+            
+        AxB_result <= A * B; 
 
-    always_ff @(posedge clk) begin
-        product <= A * B;
-        DATA_OUT <= product + C;
-    end
+        C_delayed <= C_reg;
+        
+        end
+        
+     always_ff @(posedge clk) begin 
+      
+        if (C_delayed != 0) begin
+         
+        DATA_OUT <= AxB_result + C_delayed;
+        
+        end
+        
+        else begin
+    
+        DATA_OUT <= 16'bz;
+        
+        end    
+   end   
 endmodule

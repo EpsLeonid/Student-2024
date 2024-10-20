@@ -4,6 +4,6 @@ module mult (
     output logic [15:0] C
 );
     always_comb begin
-        C = A * B;
+        C <= A * B;
     end
 endmodule
