@@ -62,9 +62,9 @@ set_global_assignment -name SYSTEMVERILOG_FILE mult_register_param.sv
 set_global_assignment -name VECTOR_WAVEFORM_FILE mult_register_param.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE d_trigger.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE mult.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE mult_register.vwf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
-set_global_assignment -name VECTOR_WAVEFORM_FILE mult_register.vwf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

@@ -8,7 +8,8 @@ module mult_register (
     output logic [15:0] AxB_result,
     output logic [15:0] DATA_OUT
 );
-   always_ff @(posedge clk) begin
+
+     always_ff @(posedge clk) begin
     
         C_reg <= C;
             
@@ -16,11 +17,12 @@ module mult_register (
 
         C_delayed <= C_reg;
         
+        
         end
         
      always_ff @(posedge clk) begin 
       
-        if (C_delayed != 0) begin
+        if (C_delayed) begin
          
         DATA_OUT <= AxB_result + C_delayed;
         

@@ -23,7 +23,7 @@ module mult_register_param (
         
      always_ff @(posedge clk) begin 
       
-        if (C_delayed != 0) begin
+        if (C_delayed) begin
          
         DATA_OUT <= AxB_result + C_delayed;
         
