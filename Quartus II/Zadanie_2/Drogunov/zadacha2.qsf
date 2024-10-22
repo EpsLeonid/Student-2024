@@ -16,9 +16,9 @@
 #
 # -------------------------------------------------------------------------- #
 #
-# Quartus II 64-Bit
+# Quartus II
 # Version 9.1 Build 222 10/21/2009 SJ Full Version
-# Date created = 23:23:23  September 22, 2024
+# Date created = 11:47:26  October 22, 2024
 #
 # -------------------------------------------------------------------------- #
 #
@@ -36,27 +36,16 @@
 # -------------------------------------------------------------------------- #
 
 
-set_global_assignment -name FAMILY "Stratix II"
+set_global_assignment -name FAMILY Stratix
 set_global_assignment -name DEVICE AUTO
 set_global_assignment -name TOP_LEVEL_ENTITY registerMOD
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 9.1
-set_global_assignment -name PROJECT_CREATION_TIME_DATE "23:23:23  SEPTEMBER 22, 2024"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:47:26  OCTOBER 22, 2024"
 set_global_assignment -name LAST_QUARTUS_VERSION 9.1
-set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
-set_global_assignment -name DEVICE_FILTER_SPEED_GRADE FASTEST
-set_global_assignment -name SYSTEMVERILOG_FILE ymnojenie.sv
-set_global_assignment -name SYSTEMVERILOG_FILE dTrigger.sv
-set_global_assignment -name SYSTEMVERILOG_FILE register.sv
-set_global_assignment -name VECTOR_WAVEFORM_FILE ymnojenieRISUNOK.vwf
-set_global_assignment -name SIMULATION_MODE FUNCTIONAL
-set_global_assignment -name VECTOR_WAVEFORM_FILE dTriggerRISUNOK.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE registerRISUNOK.vwf
-set_global_assignment -name INCLUDE_FILE includeMOD.inc
-set_global_assignment -name SYSTEMVERILOG_FILE registerMOD.sv
-set_global_assignment -name VECTOR_WAVEFORM_FILE registerMODRISUNOK.vwf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE registerMODRISUNOK.vwf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE registerMOD.vwf
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
