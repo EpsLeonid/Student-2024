@@ -18,14 +18,14 @@
 #
 # Quartus II 64-Bit
 # Version 9.1 Build 222 10/21/2009 SJ Full Version
-# Date created = 03:52:44  October 08, 2024
+# Date created = 10:49:45  October 22, 2024
 #
 # -------------------------------------------------------------------------- #
 #
 # Notes:
 #
 # 1) The default values for assignments are stored in the file:
-#		2ndTask_assignment_defaults.qdf
+#		task2_assignment_defaults.qdf
 #    If this file doesn't exist, see file:
 #		assignment_defaults.qdf
 #
@@ -36,16 +36,26 @@
 # -------------------------------------------------------------------------- #
 
 
-set_global_assignment -name FAMILY "Stratix II"
+set_global_assignment -name FAMILY "Cyclone III"
 set_global_assignment -name DEVICE AUTO
-set_global_assignment -name TOP_LEVEL_ENTITY 2ndTask
+set_global_assignment -name TOP_LEVEL_ENTITY multiplier
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 9.1
-set_global_assignment -name PROJECT_CREATION_TIME_DATE "03:52:44  OCTOBER 08, 2024"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "10:49:45  OCTOBER 22, 2024"
 set_global_assignment -name LAST_QUARTUS_VERSION 9.1
 set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
-set_global_assignment -name DEVICE_FILTER_SPEED_GRADE FASTEST
 set_global_assignment -name SYSTEMVERILOG_FILE multiplier.sv
-set_global_assignment -name SYSTEMVERILOG_FILE d_flipflop.sv
+set_global_assignment -name SYSTEMVERILOG_FILE d_flip_flop.sv
 set_global_assignment -name SYSTEMVERILOG_FILE register_8bit.sv
-set_global_assignment -name SOURCE_FILE params.svh
-set_global_assignment -name SYSTEMVERILOG_FILE register_parametrized.sv
+set_global_assignment -name SYSTEMVERILOG_FILE params.sv
+set_global_assignment -name SYSTEMVERILOG_FILE register_modified.sv
+set_global_assignment -name VECTOR_WAVEFORM_FILE multiplier_sim.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE D_flip_flop_sim.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE register_8bit_sim.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE register_modified_sim.vwf
+set_global_assignment -name TIMEQUEST_MULTICORNER_ANALYSIS ON
+set_global_assignment -name TIMEQUEST_DO_CCPP_REMOVAL ON
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
