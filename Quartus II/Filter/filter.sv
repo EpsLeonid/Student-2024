@@ -24,7 +24,9 @@
 import package_settings::*;
 /*import package_settings_v_1::*;
 import package_settings_v_2::*;
+*/
 import package_settings_v_4::*;
+/*
 import package_settings_v_6::*;*/
 //-----------------------------------------------------------------------------
 module filter (
@@ -46,7 +48,9 @@ module filter (
 //-----------------------------------------------------------------------------
 /*	output wire [SIZE_FILTER_DATA-1:0]						output_data_v1,
 	output wire [SIZE_FILTER_DATA-1:0]						output_data_v2,
-	output wire [SIZE_FILTER_DATA-1:0]						output_data_v4,
+*/	
+	output wire [SIZE_FILTER_DATA-1:0]						output_data_v4
+/*	
 	output wire [SIZE_FILTER_DATA-1:0]						output_data_v6
 */	);
 //-----------------------------------------------------------------------------
@@ -87,11 +91,11 @@ module filter (
 //		.input_data                                           (output_data_exp_sig_gen),
 //		.output_data                                          (output_data_v3));
 //
-//   v4_filter FilterV4 (
-//		.clk                                                  (clk),
-//  	.reset                                                (reset),
-//		.input_data                                           (output_data_exp_sig_gen),
-//		.output_data                                          (output_data_v4));
+   v4_filter FilterV4 (
+		.clk                                                  (clk),
+		.reset                                                (reset),
+		.input_data                                           (output_data_exp_sig_gen),
+		.output_data                                          (output_data_v4));
 //			
 //	v5_filter FilterV5 (
 //		.clk                                                  (clk),
