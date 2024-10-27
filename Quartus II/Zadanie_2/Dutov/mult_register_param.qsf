@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone III"
 set_global_assignment -name DEVICE AUTO
-set_global_assignment -name TOP_LEVEL_ENTITY mult_register
+set_global_assignment -name TOP_LEVEL_ENTITY mult_register_param
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.1 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:35:49  OCTOBER 20, 2024"
 set_global_assignment -name LAST_QUARTUS_VERSION "9.1 SP1"

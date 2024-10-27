@@ -13,26 +13,10 @@ module mult_register_param (
 
      always_ff @(posedge clk) begin
     
-        C_reg <= C;
-            
+        C_reg <= C;            
         AxB_result <= A * B; 
-
         C_delayed <= C_reg;
-        
-        end
-        
-     always_ff @(posedge clk) begin 
-      
-        if (C_delayed) begin
-         
-        DATA_OUT <= AxB_result + C_delayed;
-        
-        end
-        
-        else begin
-    
-        DATA_OUT <= 16'bz;
-        
-        end    
+DATA_OUT <= AxB_result + C_delayed;
+
    end   
 endmodule
