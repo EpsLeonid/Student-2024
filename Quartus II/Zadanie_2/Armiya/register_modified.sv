@@ -7,13 +7,14 @@ module register_modified (
     input logic [params::DATA_WIDTH-1:0] C,               // Входной сигнал C
     output logic [params::DATA_OUT_WIDTH-1:0] DATA_OUT    // Выходной сигнал
 );
-
+    reg [params::DATA_WIDTH-1:0] C_buffer;
     reg [params::DATA_OUT_WIDTH-1:0] Mult_reg; // Регистр для результата A * B
     reg [params::DATA_WIDTH-1:0] C_reg;        // Регистр для C
 
     always_ff @(posedge clk) begin
+        C_buffer <= C; 
         Mult_reg <= A * B;       // Умножение A на B
-        C_reg <= C;              // Сохранение C
+        C_reg <= C_buffer;             
         DATA_OUT <= Mult_reg + C_reg; // Вычисление итогового результата
     end
 
