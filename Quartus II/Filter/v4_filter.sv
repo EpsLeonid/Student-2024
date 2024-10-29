@@ -7,15 +7,15 @@ module v4_filter (
     output wire [SIZE_FILTER_DATA-1:0] output_data
 );
 
-	// Объявляем переменные
-	logic signed [SIZE_FILTER_DATA-1:0] d_v_4;
-	logic signed [SIZE_FILTER_DATA-1:0] p_v_4;
-	logic signed [SIZE_FILTER_DATA-1:0] r_v_4;
-	logic signed [SIZE_FILTER_DATA-1:0] s_v_4;
-	logic signed [SIZE_FILTER_DATA-1:0] Mult_reg;
+	// ГЋГЎГєГїГўГ«ГїГҐГ¬ ГЇГҐГ°ГҐГ¬ГҐГ­Г­Г»ГҐ
+	reg signed [SIZE_FILTER_DATA-1:0] d_v_4;
+	reg signed [SIZE_FILTER_DATA-1:0] p_v_4;
+	reg signed [SIZE_FILTER_DATA-1:0] r_v_4;
+	reg signed [SIZE_FILTER_DATA-1:0] s_v_4;
+	reg signed [SIZE_FILTER_DATA+3:0] Mult_reg;
 
-	// Дополнительные регистры для задержанных значений
-	logic [SIZE_FILTER_DATA-1:0] input_data_delay[0:k_v_4+l_v_4-1];
+	// Г„Г®ГЇГ®Г«Г­ГЁГІГҐГ«ГјГ­Г»ГҐ Г°ГҐГЈГЁГ±ГІГ°Г» Г¤Г«Гї Г§Г Г¤ГҐГ°Г¦Г Г­Г­Г»Гµ Г§Г­Г Г·ГҐГ­ГЁГ©
+	reg signed [SIZE_FILTER_DATA-1:0] input_data_delay[0:k_v_4+l_v_4-1];
 
 	always_ff @(posedge clk or negedge reset) begin
 		if (!reset) begin
@@ -29,26 +29,26 @@ module v4_filter (
 				input_data_delay[i] <= '0;
 			end
 		end else begin
-			// Обновляем дополнительные регистры
+			// ГЋГЎГ­Г®ГўГ«ГїГҐГ¬ Г¤Г®ГЇГ®Г«Г­ГЁГІГҐГ«ГјГ­Г»ГҐ Г°ГҐГЈГЁГ±ГІГ°Г»
 			for (int i = (k_v_4+l_v_4-1); i > 0; i--) begin
 				input_data_delay[i] <= input_data_delay[i-1];
 			end
 			input_data_delay[0] <= input_data;
 
-			// Вычисление d
+			// Г‚Г»Г·ГЁГ±Г«ГҐГ­ГЁГҐ d
 			d_v_4 <= input_data_delay[0] - input_data_delay[k_v_4-1] - input_data_delay[l_v_4-1] + input_data_delay[k_v_4 + l_v_4 -1];
 
-			// Вычисление p
+			// Г‚Г»Г·ГЁГ±Г«ГҐГ­ГЁГҐ p
 			p_v_4 <= p_v_4 + d_v_4;
 
-			// Вычисление r
+			// Г‚Г»Г·ГЁГ±Г«ГҐГ­ГЁГҐ r
 			Mult_reg <=  M_v_4 * d_v_4;
 			r_v_4 <= p_v_4 + Mult_reg;
 
-			// Вычисление s
+			// Г‚Г»Г·ГЁГ±Г«ГҐГ­ГЁГҐ s
 			s_v_4 <= s_v_4 + r_v_4;
 
-			// Обновление переменных
+			// ГЋГЎГ­Г®ГўГ«ГҐГ­ГЁГҐ ГЇГҐГ°ГҐГ¬ГҐГ­Г­Г»Гµ
 			output_data <= s_v_4;
 		end
 	end
