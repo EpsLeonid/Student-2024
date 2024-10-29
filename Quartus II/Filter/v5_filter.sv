@@ -4,7 +4,7 @@ module v5_filter (
     input  wire clk,
     input  wire reset,
     input  wire signed [SIZE_FILTER_DATA-1:0] input_data,
-    output wire signed [SIZE_FILTER_DATA+3:0] output_data);
+    output wire signed [SIZE_FILTER_DATA-1:0] output_data);
     
     logic signed [SIZE_FILTER_DATA-1:0] y_v_5 [k_v_5+l_v_5:0];
     logic signed [SIZE_FILTER_DATA-1:0] d_v_5;
@@ -33,7 +33,7 @@ module v5_filter (
 		p_v_5<=p_v_5+d_v_5;
 		r_v_5<=p_v_5+d1_v_5;
 		s_v_5<=s_v_5+r_v_5;
-		output_data<=s_v_5;
+		output_data<=s_v_5[19:4];
 	end
 
     endmodule
