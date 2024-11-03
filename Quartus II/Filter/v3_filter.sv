@@ -14,7 +14,7 @@ module v3_filter(
 );
     logic signed [SIZE_FILTER_DATA-1:0] n_v_3 [k_v_3+l_v_3:0];
     logic [31:0] i; 
-
+    
     always_ff @(posedge clk) begin 
         if (reset) begin 
             n_v_3[0] <= input_data;
@@ -28,7 +28,8 @@ module v3_filter(
         end    
     end
 
-    always_ff @(posedge clk) begin                        
+    always_ff @(posedge clk) begin
+    if (reset) begin                        
         if (i > k_v_3)                
             d_k_3 <= n_v_3[i] - n_v_3[i - k_v_3];
         else                
@@ -53,7 +54,15 @@ module v3_filter(
             s_v_3 <= s_v_3[i] + q_v_3 + m1_v_3 * p_v_3;
         else
             s_v_3 <= q_v_3[i] + m1_v_3 * p_v_3;
-
-        output_data <= s_v_3;   
+            output_data <= s_v_3; 
+            
+     end else begin  
+			d_1_3 <=0; 		
+			d_k_3 <=0;			
+			p_v_3 <=0;
+			q_v_3 <=0;
+			s_v_3 <=0;
+			output_data <=0;
+    end
     end
 endmodule
