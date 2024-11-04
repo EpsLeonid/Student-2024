@@ -8,12 +8,17 @@ module v2_filter
     output wire signed [SIZE_FILTER_DATA-1:0] output_data
 );
 	logic signed [SIZE_FILTER_DATA-1:0] v_v_2 [k_v_2+l_v_2:0];
+	logic signed [SIZE_FILTER_DATA-1:0] eto_zaderjka;
 	logic signed [SIZE_FILTER_DATA-1:0] d_kl_v_2;
 	logic signed [SIZE_FILTER_DATA:0]   d_v_2;
 	logic signed [SIZE_FILTER_DATA-1:0] p_v_2;
 	logic signed [SIZE_FILTER_DATA+1:0] r_v_2;
 	logic signed [SIZE_FILTER_DATA+3:0] s_v_2;
 
+		always_ff @(posedge clk) 
+			begin
+			eto_zaderjka<=input_data;
+			end
 		always_ff @(posedge clk) 
 			begin
 		if (!reset)
@@ -25,7 +30,7 @@ module v2_filter
 			end
 			end 
 			else
-					v_v_2[0]<=input_data;
+					v_v_2[0]<=eto_zaderjka;
 				for (int i = k_v_2+l_v_2; i>=1; i--) 
 				begin
 					v_v_2[i] <= v_v_2[i-1];
