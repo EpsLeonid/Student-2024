@@ -1,5 +1,5 @@
-`ifndef PARAMS_SV
-`define PARAMS_SV
+`ifndef PARAMS_V_2
+`define PARAMS_V_2
 package package_settings_v_2;
 	parameter int k_v_2 = 5;
 	parameter int l_v_2 = 5;
