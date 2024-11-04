@@ -22,7 +22,7 @@ module v1_filter
     	if (reset) begin
 			zaderjanie<=input_data;	
 		end else begin
-                        zaderjanie<=0;
+            zaderjanie<=0;
 		end
     end
 
@@ -31,7 +31,7 @@ module v1_filter
     begin
         if (!reset)
         begin
-            v_v_1[0] <= zaderjanie;
+            v_v_1[0] <= 0;
             for (int i = k_v_1 + l_v_1; i >= 1; i--) 
             begin
                 v_v_1[i] <= 0;
@@ -39,7 +39,7 @@ module v1_filter
         end 
         else
         begin
-            v_v_1[0] <= input_data;
+            v_v_1[0] <= zaderjanie;
             for (int i = k_v_1 + l_v_1; i >= 1; i--) 
             begin
                 v_v_1[i] <= v_v_1[i-1];

@@ -1,5 +1,5 @@
-`ifndef SETTINGS
-`define SETTINGS
+`ifndef SETTINGS_v3
+`define SETTINGS_v3
 
 package package_settings_v_3;
 

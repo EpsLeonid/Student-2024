@@ -17,7 +17,10 @@ module v2_filter
 
 		always_ff @(posedge clk) 
 			begin
-			eto_zaderjka<=input_data;
+			if (!reset)
+			eto_zaderjka <= 0;
+			else
+			eto_zaderjka <= input_data;
 			end
 		always_ff @(posedge clk) 
 			begin

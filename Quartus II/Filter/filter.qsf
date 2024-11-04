@@ -45,7 +45,6 @@ set_global_assignment -name LAST_QUARTUS_VERSION "9.1 SP2"
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
@@ -53,8 +52,10 @@ set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda
 set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "C:/Users/Public/Documents/zadanie_2/simulation/qsim/" -section_id eda_simulation
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_simulation
-set_global_assignment -name TIMEQUEST_MULTICORNER_ANALYSIS ON
-set_global_assignment -name TIMEQUEST_DO_CCPP_REMOVAL ON
+set_global_assignment -name SYSTEMVERILOG_FILE package_settings_v_3.sv
+set_global_assignment -name SYSTEMVERILOG_FILE package_settings_v_5.sv
+set_global_assignment -name SYSTEMVERILOG_FILE v3_filter.sv
+set_global_assignment -name SYSTEMVERILOG_FILE v5_filter.sv
 set_global_assignment -name SYSTEMVERILOG_FILE v4_filter.sv
 set_global_assignment -name SYSTEMVERILOG_FILE package_settings_v_1.sv
 set_global_assignment -name SYSTEMVERILOG_FILE filter.sv
