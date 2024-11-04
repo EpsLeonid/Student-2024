@@ -22,7 +22,7 @@ module v1_filter
     	if (reset) begin
 			zaderjanie<=input_data;	
 		end else begin
-
+                        zaderjanie<=0;
 		end
     end
 
