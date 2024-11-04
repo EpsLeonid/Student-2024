@@ -19,7 +19,7 @@ module v5_filter (
     	if (reset) begin
 			ZaDErzhKa<=input_data;	
 		end else begin
-
+			ZaDErzhKa<=0;
 		end
     end
 
