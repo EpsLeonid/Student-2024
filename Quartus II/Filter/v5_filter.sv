@@ -15,25 +15,42 @@ module v5_filter (
     
 
     always_ff @(posedge clk) begin
-		y_v_5[0]<=input_data;
-		for (int i = k_v_5+l_v_5; i>=1;i--) begin
-			y_v_5[i]<=y_v_5[i-1];
+
+    	if (reset) begin
+			y_v_5[0]<=input_data;
+			for (int i = k_v_5+l_v_5; i>=1;i--) begin
+				y_v_5[i]<=y_v_5[i-1];
+			end		
+		end else begin
+			for (int i = 0; i<=k_v_5+l_v_5;i++) begin
+				y_v_5[i]<=0;
+			end	
 		end
     end
     
     
     always_ff @(posedge clk) begin
-		d1_v_5<=d_v_5*M_v_5;
+		if (reset) begin
+			d1_v_5<=d_v_5*M_v_5;
+		end else begin
+			d1_v_5<=0;
+		end
     end
     
     
-    always_ff @(posedge clk&&reset) begin 
-
-		d_v_5<=y_v_5[0]-y_v_5[k_v_5]-y_v_5[l_v_5]+y_v_5[k_v_5+l_v_5];
-		p_v_5<=p_v_5+d_v_5;
-		r_v_5<=p_v_5+d1_v_5;
-		s_v_5<=s_v_5+r_v_5;
-		output_data<=s_v_5[19:4];
-	end
-
-    endmodule
+    always_ff @(posedge clk) begin 
+		if (reset) begin
+			d_v_5<=y_v_5[0]-y_v_5[k_v_5]-y_v_5[l_v_5]+y_v_5[k_v_5+l_v_5];
+			p_v_5<=p_v_5+d_v_5;
+			r_v_5<=p_v_5+d1_v_5;
+			s_v_5<=s_v_5+r_v_5;
+			output_data<=s_v_5[19:4];
+		end else begin
+			d_v_5<=0;
+			p_v_5<=0;
+			r_v_5<=0;
+			s_v_5<=0;
+			output_data<=0;
+		end
+		end
+		endmodule
