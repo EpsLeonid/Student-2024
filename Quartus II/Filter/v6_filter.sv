@@ -4,63 +4,66 @@ module v6_filter(
     input  wire clk,
     input  wire reset,
     input  wire signed [SIZE_FILTER_DATA-1:0] input_data,
-    output wire signed [SIZE_FILTER_DATA-1:0] output_data,
-    output logic signed [SIZE_FILTER_DATA-1:0] v [0:SIZE_FILTER_DATA-1],     
-    output logic signed [SIZE_FILTER_DATA-1:0] d_k,         
-    output logic signed [SIZE_FILTER_DATA-1:0] d_1,          
-    output logic signed [SIZE_FILTER_DATA-1:0] p,           
-    output logic signed [SIZE_FILTER_DATA-1:0] q,           
-    output logic signed [SIZE_FILTER_DATA-1:0] s          
-);
+    output wire signed [SIZE_FILTER_DATA-1:0] output_data);
+    
+    
+    logic signed [SIZE_FILTER_DATA-1:0] v_v_6 [k_v_6:0];     
+    logic signed [SIZE_FILTER_DATA-1:0] d_k_v_6;         
+    logic signed [SIZE_FILTER_DATA-1:0] d_1_v_6;          
+    logic signed [SIZE_FILTER_DATA-1:0] p_v_6;         
+    logic signed [SIZE_FILTER_DATA:0] q_v_6;           
+    logic signed [SIZE_FILTER_DATA+6:0] s_v_6; 
+    
+    logic signed [SIZE_FILTER_DATA-1:0] v_delay_v_6;
+    logic signed [SIZE_FILTER_DATA-1:0] d_1_delay_v_6 [l_v_6:0];
+    logic signed [SIZE_FILTER_DATA-1:0] d_k_delay_v_6;
+    logic signed [SIZE_FILTER_DATA+4:0] p_delay_v_6;
 
-	//logic signed [SIZE_FILTER_DATA-1:0] v [0:SIZE_FILTER_DATA-1];
-
-    logic [32:0] n; //bit = log2N
-
+	
+	always_ff @(posedge clk) begin
+		v_v_6[0]<=input_data;
+		for (int i = k_v_6; i >= 1; i--) begin
+			v_v_6[i] <= v_v_6[i-1];
+		end
+    end
+	
+	always_ff @(posedge clk) begin
+		v_delay_v_6 <= v_v_6[0];
+		d_k_delay_v_6 <= d_k_v_6;
+		p_delay_v_6 <= m1_v_6 * p_v_6;
+	end
+	
+	always_ff @(posedge clk) begin
+		d_1_delay_v_6[0]<=d_1_v_6*k_v_6;
+		for (int i = l_v_6; i >= 1; i--) begin
+			d_1_delay_v_6[i] <= d_1_delay_v_6[i-1];
+		end
+    end
+	
     always_ff @(posedge clk ) begin
         if (!reset) begin
-            n <= 0;
-            d_k <= 0;
-            d_1 <= 0;
-            p <= 0;
-            q <= 0;
-            s <= 0;
+ 
+            d_k_v_6 <= 0;
+            d_1_v_6 <= 0;
+            p_v_6 <= 0;
+            q_v_6 <= 0;
+            s_v_6 <= 0;
             output_data <= 0;
+            
         end else begin
             
-            v[n] <= input_data;
-
+            d_k_v_6 <= v_v_6[0] - v_v_6[k_v_6];
             
-            if (n > k_v_6)
-                d_k <= v[n] - v[n - k_v_6];
-            else
-                d_k <= v[n];
-
+            d_1_v_6 <= v_v_6[0] - v_delay_v_6;
             
-            if (n > 1)
-                d_1 <= v[n] - v[n - 1];
-            else
-                d_1 <= v[n];
-
+            p_v_6 <= p_v_6 + d_k_delay_v_6 - d_1_delay_v_6[l_v_6];
             
-            if (n > l_v_6)
-                p <= p[n - 1] + d_k - k_v_6 * d_1[n - l_v_6];
-            else
-                p <= p[n - 1] + d_k;
-
-            if (n > 1)
-				q <= q[n - 1] + m2_v_6 * p;
-			else
-				p <= m2_v_6 * p;
-			
-			if (n > 1)  
-				s <= s[n - 1] + q + m1_v_6 * p;
-			else
-				s <= q + m1_v_6 * p;
+            q_v_6 <= q_v_6 + m2_v_6* p_v_6; 
             
-            output_data <= s;
-			
-            n <= n + 1;
+            s_v_6 <= s_v_6 + q_v_6 + p_delay_v_6;
+            
+            output_data <= s_v_6[22:7];   
+            
         end
     end
 
