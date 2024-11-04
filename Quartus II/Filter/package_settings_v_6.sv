@@ -1,5 +1,5 @@
-`ifndef PARAMS
-`define PARAMS
+`ifndef PARAMS_v_6
+`define PARAMS_v_6
 
 package package_settings_v_6;
 
