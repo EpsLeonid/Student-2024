@@ -15,13 +15,23 @@ module v1_filter
     logic signed [SIZE_FILTER_DATA-1:0] p_v_1;
     logic signed [SIZE_FILTER_DATA+1:0] r_v_1;
     logic signed [SIZE_FILTER_DATA+3:0] s_v_1;
+    logic signed [SIZE_FILTER_DATA-1:0] zaderjanie;
+
+        always_ff @(posedge clk) begin
+
+    	if (reset) begin
+			zaderjanie<=input_data;	
+		end else begin
+
+		end
+    end
 
     
     always_ff @(posedge clk) 
     begin
         if (!reset)
         begin
-            v_v_1[0] <= 0;
+            v_v_1[0] <= zaderjanie;
             for (int i = k_v_1 + l_v_1; i >= 1; i--) 
             begin
                 v_v_1[i] <= 0;
@@ -49,8 +59,7 @@ module v1_filter
     
     always_ff @(posedge clk) 
     begin
-        if (!reset)
-        begin
+        if (!reset) begin
             d_kl_v_1 <= 0;
             p_v_1 <= 0;
             r_v_1 <= 0;
