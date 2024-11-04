@@ -12,12 +12,21 @@ module v5_filter (
     logic signed [SIZE_FILTER_DATA-1:0] p_v_5;
     logic signed [SIZE_FILTER_DATA+1:0] r_v_5;
     logic signed [SIZE_FILTER_DATA+3:0] s_v_5;
+    logic signed [SIZE_FILTER_DATA-1:0] ZaDErzhKa;
     
+        always_ff @(posedge clk) begin
+
+    	if (reset) begin
+			ZaDErzhKa<=input_data;	
+		end else begin
+
+		end
+    end
 
     always_ff @(posedge clk) begin
 
     	if (reset) begin
-			y_v_5[0]<=input_data;
+			y_v_5[0]<=ZaDErzhKa;
 			for (int i = k_v_5+l_v_5; i>=1;i--) begin
 				y_v_5[i]<=y_v_5[i-1];
 			end		
